@@ -36,7 +36,7 @@ Page({
     // 调用接口
     qqmapsdk.search({
       keyword: text,  //搜索关键词
-      location: '31.838293,117.255652',  //设置周边搜索中心点
+      // location: '31.838293,117.255652',  //设置周边搜索中心点
       success: function (res) { //搜索成功后的回调
         var texttitle = '共找到'+res.data.length+'个地点'
         wx.showToast({

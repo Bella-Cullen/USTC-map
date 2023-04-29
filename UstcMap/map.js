@@ -675,72 +675,75 @@ class QQMapWX {
    * @see http://lbs.qq.com/webservice_v1/guide-search.html
    */
   search(options) {
-      var that = this;
-      options = options || {};
+      // var that = this;
+      // options = options || {};
 
-      Utils.polyfillParam(options);
+      // Utils.polyfillParam(options);
 
-      if (!Utils.checkKeyword(options)) {
-          return;
-      }
+      // if (!Utils.checkKeyword(options)) {
+      //     return;
+      // }
 
-      var requestParam = {
-          keyword: options.keyword,
-          orderby: options.orderby || '_distance',
-          page_size: options.page_size || 10,
-          page_index: options.page_index || 1,
-          output: 'json',
-          key: that.key
-      };
+      // var requestParam = {
+      //     keyword: options.keyword,
+      //     orderby: options.orderby || '_distance',
+      //     page_size: options.page_size || 10,
+      //     page_index: options.page_index || 1,
+      //     output: 'json',
+      //     key: that.key
+      // };
 
-      if (options.address_format) {
-          requestParam.address_format = options.address_format;
-      }
+      // if (options.address_format) {
+      //     requestParam.address_format = options.address_format;
+      // }
 
-      if (options.filter) {
-          requestParam.filter = options.filter;
-      }
+      // if (options.filter) {
+      //     requestParam.filter = options.filter;
+      // }
 
-      var distance = options.distance || "1000";
-      var auto_extend = options.auto_extend || 1;
-      var region = null;
-      var rectangle = null;
+      // var distance = options.distance || "1000";
+      // var auto_extend = options.auto_extend || 1;
+      // var region = null;
+      // var rectangle = null;
 
-      //判断城市限定参数
-      if (options.region) {
-        region = options.region;
-      }
+      // //判断城市限定参数
+      // if (options.region) {
+      //   region = options.region;
+      // }
 
-      //矩形限定坐标(暂时只支持字符串格式)
-      if (options.rectangle) {
-        rectangle = options.rectangle;
-      }
+      // //矩形限定坐标(暂时只支持字符串格式)
+      // if (options.rectangle) {
+      //   rectangle = options.rectangle;
+      // }
 
-      var locationsuccess = function (result) {        
-        if (region && !rectangle) {
-          //城市限定参数拼接
-          requestParam.boundary = "region(" + region + "," + auto_extend + "," + result.latitude + "," + result.longitude + ")";
-          if (options.sig) {
-            requestParam.sig = Utils.getSig(requestParam, options.sig, 'search');
-          }
-        } else if (rectangle && !region) {
-          //矩形搜索
-          requestParam.boundary = "rectangle(" + rectangle + ")";
-          if (options.sig) {
-            requestParam.sig = Utils.getSig(requestParam, options.sig, 'search');
-          }
-          } else {
-            requestParam.boundary = "nearby(" + result.latitude + "," + result.longitude + "," + distance + "," + auto_extend + ")";
-          if (options.sig) {
-            requestParam.sig = Utils.getSig(requestParam, options.sig, 'search');
-          }
-          }            
-          wx.request(Utils.buildWxRequestConfig(options, {
-              url: URL_SEARCH,
-              data: requestParam
-          }, 'search'));
-      };
-      Utils.locationProcess(options, locationsuccess);
+      // var locationsuccess = function (result) {        
+      //   if (region && !rectangle) {
+      //     //城市限定参数拼接
+      //     requestParam.boundary = "region(" + region + "," + auto_extend + "," + result.latitude + "," + result.longitude + ")";
+      //     if (options.sig) {
+      //       requestParam.sig = Utils.getSig(requestParam, options.sig, 'search');
+      //     }
+      //   } else if (rectangle && !region) {
+      //     //矩形搜索
+      //     requestParam.boundary = "rectangle(" + rectangle + ")";
+      //     if (options.sig) {
+      //       requestParam.sig = Utils.getSig(requestParam, options.sig, 'search');
+      //     }
+      //     } else {
+      //       requestParam.boundary = "nearby(" + result.latitude + "," + result.longitude + "," + distance + "," + auto_extend + ")";
+      //     if (options.sig) {
+      //       requestParam.sig = Utils.getSig(requestParam, options.sig, 'search');
+      //     }
+      //     }            
+      //     wx.request(Utils.buildWxRequestConfig(options, {
+      //         url: URL_SEARCH,
+      //         data: requestParam
+      //     }, 'search'));
+      // };
+      // Utils.locationProcess(options, locationsuccess);
+      wx.request({
+        url: 'url',
+      })
   };
 
   /**
