@@ -1,0 +1,24 @@
+<view class='framework'>
+   <view class='input-position'>
+      <image src='../../images/searchIcon.jpg' class='search-image'></image>
+       <input class="input" placeholder="搜索想要去的地方" placeholder-style="color:#bdbdbd;" bindinput="inputplace" />
+       <view class='line'></view>
+       <view class='search-text' bindtap="nearby_search">搜索</view>
+   </view>
+</view>
+
+<map 
+id="myMap"
+style="width:100%;height:1300rpx"
+markers="{{markers}}"
+data-markers="{{markers}}"
+scale="17"
+show-compass="true"
+enable-rotate="true"
+enable-building="true"
+bindmarkertap="onPointTap"
+bindlabeltap="onPointTap"
+subkey="6IFBZ-ZYQ3I-UFHGJ-UVPZH-3HI2V-EQBBY"
+layer-style="2"
+latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}"
+></map>
