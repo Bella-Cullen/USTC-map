@@ -48,8 +48,9 @@ Page({
     };
 
     //匹配,模糊搜索
+    var re=new RegExp(text);
     for(var i=0;i<len;i++){
-      if(place_lst[i].name==text){
+      if(re.test(place_lst[i].name)){
         res.data.push(place_lst[i]);
       }
     }
@@ -298,15 +299,14 @@ Page({
       hidden:true,
     })
     //路径规划
-    // var plugin = requirePlugin('routePlan');
-    // var key = '6IFBZ-ZYQ3I-UFHGJ-UVPZH-3HI2V-EQBBY';  //使用在腾讯位置服务申请的key
-    // var referer = 'cugerguider';   //调用插件的app的名称
-    // var themeColor = '#7B68EE';  //主题颜色
-    // var endPoint = that.data.endPoint;
-    // var startPoint = that.data.startPoint;
-    // wx.navigateTo({
-    //     url: 'plugin://routePlan/index?key=' + key + '&referer=' + referer +'&endPoint=' + endPoint  + '&startPoint='+ startPoint + '&themeColor=' + themeColor
-    // });
+    var key = '6IFBZ-ZYQ3I-UFHGJ-UVPZH-3HI2V-EQBBY';  //使用在腾讯位置服务申请的key
+    var referer = 'cugerguider';   //调用插件的app的名称
+    var themeColor = '#7B68EE';  //主题颜色
+    var endPoint = that.data.endPoint;
+    var startPoint = that.data.startPoint;
+    wx.navigateTo({
+        url: 'plugin://routePlan/index?key=' + key + '&referer=' + referer +'&endPoint=' + endPoint  + '&startPoint='+ startPoint + '&themeColor=' + themeColor
+    });
   },
   imgclick:function(){
     var imgUrl = this.data.place_img_src;

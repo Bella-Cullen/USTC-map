@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/gao_xin/gao_xin"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -9,5 +10,39 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.12",
+      "provider": "wx50b5593e81dd937a"
+    },
+    "subway": {
+      "version": "1.0.10",
+      "provider": "wx6aaf93c4435fa1c1"
+    },
+    "chooseLocation": {
+      "version": "1.0.5",
+      "provider": "wx76a9a06e5b4e693e"
+    }
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#2e74ee",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "selectedIconPath": "/images/icon1_green.png",
+        "iconPath": "/images/icon1.png",
+        "pagePath": "pages/index/index",
+        "text": "主校区"
+      },
+      {
+        "selectedIconPath": "/images/icon1_green.png",
+        "iconPath": "/images/icon1.png",
+        "pagePath": "pages/gao_xin/gao_xin",
+        "text": "高新区?"
+      }
+    ]
+  }
 }

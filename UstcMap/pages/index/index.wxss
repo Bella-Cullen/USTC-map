@@ -3,7 +3,7 @@
   width: 700rpx;
   height: 80rpx;
   margin-left: 20rpx;
-  margin-top: 50rpx;
+  margin-top: 20rpx;
   border-radius: 10rpx;
   margin-bottom: 20rpx;
   display: flex;

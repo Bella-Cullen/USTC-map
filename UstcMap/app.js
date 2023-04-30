@@ -1,5 +1,5 @@
-// app.ts
 //TODO:搭建图片网站,每个图片对应一个url,放在map.data.img里
+//TODO:每个地图点分类,如食堂,行政楼,宿舍,交通等
 App({
   globalData: {
     map:[
@@ -12,8 +12,8 @@ App({
           img:["https://i0.hdslb.com/bfs/archive/5c85359983cc3aa8860734698df255bd9825b1eb.jpg"]
         },
         {
-          latitude:31.840456,
-          longtitude:117.253904,
+          latitude:31.840485,
+          longtitude:117.253780,
           name:"金桔餐厅",
         },
         {
