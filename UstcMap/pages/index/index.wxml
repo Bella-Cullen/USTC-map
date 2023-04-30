@@ -22,3 +22,10 @@ subkey="6IFBZ-ZYQ3I-UFHGJ-UVPZH-3HI2V-EQBBY"
 layer-style="2"
 latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}"
 ></map>
+
+<modal class="model" hidden="{{hidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalconfirm" bindcancel="modalcancel" title="前往此处" style="width:80%">
+  <view class="model-img">
+    <image style="width:565rpx;height:800rpx" src="{{place_img_src}}" bindtap="imgclick"></image>
+  </view>
+  <view class="model-name">{{modalname}}</view>
+</modal>

@@ -43,3 +43,10 @@
   height:40rpx;
   margin-right: 12rpx;
 }
+.model{
+  width: 100%;
+}
+.model-name{
+  text-align: center;
+  margin-top: 10rpx;
+}
