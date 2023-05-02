@@ -1,12 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/gao_xin/gao_xin"
+    "pages/gao_xin/gao_xin",
+    "pages/campus/campus",
+    "pages/surrounding/surrounding",
+    "pages/tips/tips"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "中科大校园导航",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
@@ -38,10 +40,28 @@
         "text": "主校区"
       },
       {
-        "selectedIconPath": "/images/icon1_green.png",
-        "iconPath": "/images/icon1.png",
+        "selectedIconPath": "/images/icon2_green.png",
+        "iconPath": "/images/icon2.png",
         "pagePath": "pages/gao_xin/gao_xin",
-        "text": "高新区?"
+        "text": "高新区"
+      },
+      {
+        "selectedIconPath": "/images/icon3_green.png",
+        "iconPath": "/images/icon3.png",
+        "pagePath": "pages/campus/campus",
+        "text": "校园服务"
+      },
+      {
+        "selectedIconPath": "/images/icon4_green.png",
+        "iconPath": "/images/icon4.png",
+        "pagePath": "pages/surrounding/surrounding",
+        "text": "周边服务"
+      },
+      {
+        "selectedIconPath": "/images/icon5_green.png",
+        "iconPath": "/images/icon5.png",
+        "pagePath": "pages/tips/tips",
+        "text": "生活攻略"
       }
     ]
   }

@@ -50,3 +50,26 @@
   text-align: center;
   margin-top: 10rpx;
 }
+.searchresult {
+  position: absolute;
+  left:90rpx;
+  width: 480rpx;
+  background: #fff;
+  z-index: 100;
+}
+.result {
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  padding: 0 30rpx;
+  color: #333;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.map{
+  position: absolute;
+  z-index: 1;
+}

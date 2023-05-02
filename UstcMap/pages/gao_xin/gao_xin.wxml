@@ -1,2 +1,41 @@
-<!--pages/gao_xin/gao_xin.wxml-->
-<text>pages/gao_xin/gao_xin.wxml</text>
+<view class='framework'>
+   <view class='input-position'>
+      <image src='../../images/searchIcon.jpg' class='search-image'></image>
+       <input class="input" placeholder="搜索想要去的地方" placeholder-style="color:#bdbdbd;" bindinput="inputplace" value="{{input_txt}}" bindtap="click_input"/>
+       <view class='line'></view>
+       <view class='search-text' bindtap="nearby_search">搜索</view>
+   </view>
+</view>
+
+<view class="searchresult" wx:if="{{inputvalue != ''}}" hidden="{{search_hidden}}">
+  <view class="result" wx:for="{{search_result}}" wx:key="index" bindtap="getInputValue" data-postname="{{item.name}}">
+    <view>{{item.name}}</view>
+  </view>
+</view>
+
+<map 
+class="map"
+id="myMap"
+style="width:100%;height:1300rpx"
+markers="{{markers}}"
+data-markers="{{markers}}"
+scale="17"
+show-compass="true"
+enable-rotate="true"
+enable-building="true"
+bindmarkertap="onPointTap"
+bindlabeltap="onPointTap"
+bindtap="map_click"
+bindregionchange="map_click"
+subkey="6IFBZ-ZYQ3I-UFHGJ-UVPZH-3HI2V-EQBBY"
+latitude="{{center_lat}}" longitude="{{center_long}}"
+show-location="true"
+>
+</map>
+
+<modal class="model" hidden="{{hidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalconfirm" bindcancel="modalcancel" title="前往此处" style="width:80%">
+  <view class="model-img">
+    <image style="width:565rpx;height:800rpx" src="{{place_img_src}}" bindtap="imgclick"></image>
+  </view>
+  <view class="model-name">{{modalname}}</view>
+</modal>
