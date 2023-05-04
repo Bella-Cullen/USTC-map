@@ -33,6 +33,8 @@ show-location="true"
 >
 </map>
 
+<image class="location" src="../../images/locate.jpg" bindtap="backToCurLocation"></image>
+
 <modal class="model" hidden="{{hidden}}" confirm-text="确定" cancel-text="取消" bindconfirm="modalconfirm" bindcancel="modalcancel" title="前往此处" style="width:80%">
   <view class="model-img">
     <image style="width:565rpx;height:800rpx" src="{{place_img_src}}" bindtap="imgclick"></image>

@@ -10,7 +10,26 @@ Page({
   },
   //data
   data:{
-    buildData:app.globalData.map[0].data_main,
+    //app.data
+    west_canteen:app.globalData.campus[0].data_west.food.canteen,
+    west_fruit:app.globalData.campus[0].data_west.food.fruit,
+    west_fooddelivery:app.globalData.campus[0].data_west.food.food_delivery,
+    west_teachingbuilding:app.globalData.campus[0].data_west.study.teaching_building,
+    west_library:app.globalData.campus[0].data_west.study.library,
+    west_lab_building:app.globalData.campus[0].data_west.study.lab_building,
+    west_toilet:app.globalData.campus[0].data_west.convenience.toilet,
+    west_delivery:app.globalData.campus[0].data_west.convenience.delivery,
+    west_store:app.globalData.campus[0].data_west.convenience.store,
+    west_printing:app.globalData.campus[0].data_west.convenience.printing,
+    west_gate:app.globalData.campus[0].data_west.traffic.gate,
+    west_bicycle:app.globalData.campus[0].data_west.traffic.bicycle,
+    west_bus:app.globalData.campus[0].data_west.traffic.bus,
+    west_sports:app.globalData.campus[0].data_west.sports.sports,
+    west_scenery:app.globalData.campus[0].data_west.scenery.scenery,
+    west_dormitory:app.globalData.campus[0].data_west.dormitory.dormitory,
+    west_hospital:app.globalData.campus[0].data_west.hospital.hospital,
+    app_data:[],
+
     hidden:true,
     search_hidden:true,
     markers:[],
@@ -19,7 +38,7 @@ Page({
     search_result:[],
     startPoint:null,
     endPoint:null,
-    currentdatabase:null,
+    currentdatabase:[],
     place_img_src:[""],
     modalname:"",
     center_lat:31.838293,
@@ -47,11 +66,18 @@ Page({
     var text2='.*'+arr2.join('.*')+'.*';
     var re1=new RegExp(text1);
     var re2=new RegExp(text2);
-    var place_lst=this.data.buildData;
-    var len=place_lst.length;
     var res=[];
-    for(var i=0;i<len;i++){
-      if(flag1&&(re1.test(place_lst[i].name)||re2.test(place_lst[i].name)))res.push(place_lst[i]);
+    var st=new Set();
+    for(var j=0;j<this.data.app_data.length;j++)
+    {
+      var place_lst=this.data.app_data[j];
+      var len=place_lst.length;     
+      for(var i=0;i<len;i++){
+        if(flag1&&(re1.test(place_lst[i].name)||re2.test(place_lst[i].name))&&!st.has(place_lst[i].name)){
+          res.push(place_lst[i]);
+          st.add(place_lst[i].name);
+        }
+      }
     }
     this.setData({
       inputvalue:value,
@@ -87,16 +113,20 @@ Page({
   nearby_search:function(){
     //text是输入的地址
     var text = this.data.inputvalue;
-    //待匹配的地址数组
-    var place_lst=this.data.buildData;
-    var len=place_lst.length;
     //返回的匹配完成的地址数组
     var res=[];
-    //匹配,精确搜索
-    for(var i=0;i<len;i++){
-      if(text==place_lst[i].name){
-        res.push(place_lst[i]);
-        break;
+    var mark=[];
+    mark.push(this.data.markers[0]);
+    //待匹配的地址数组
+    for(var j=0;j<this.data.app_data.length;j++)
+    {
+      var place_lst=this.data.app_data[j];
+      var len=place_lst.length;
+      //匹配,精确搜索
+      for(var i=0;i<len;i++){
+        if(text==place_lst[i].name){
+          res.push(place_lst[i]);
+        }
       }
     }
     //弹出框
@@ -107,13 +137,12 @@ Page({
       duration: 2000
     })
     //更新markers标记点
-    if(res.length) {
-      let lat = res[0].latitude;
-      let lon = res[0].longtitude;
-      let name = res[0].name;
-      var mark0=this.data.markers[0];
-      var mark1={
-        id:1,
+    for(var i=0;i<res.length;i++) {
+      let lat = res[i].latitude;
+      let lon = res[i].longtitude;
+      let name = res[i].name;
+      var mark_tmp={
+        id:i+1,
         latitude: lat,
         longitude: lon,
         iconPath: "../../images/标记.png",
@@ -132,19 +161,14 @@ Page({
           padding: 2,
         }
       }
-      this.setData({
-        markers:[mark0,mark1],
-        currentdatabase:res[0],
-        center_long:lon,
-        center_lat:lat,
-      })
+      mark.push(mark_tmp);
     }
-    else{
-      var mark0=this.data.markers[0];
-      this.setData({
-        markers:[mark0],
-      })
-    }
+    this.setData({
+      markers:mark,
+      currentdatabase:res,
+      center_long:res[0].longtitude,
+      center_lat:res[0].latitude,
+    })
   },
   //生命周期函数--监听页面加载
   onLoad: function (options) {
@@ -152,6 +176,25 @@ Page({
       var that = this;
       this.setData({
         search_hidden:true,
+        app_data:[
+          this.data.west_canteen,
+          this.data.west_fruit,
+          this.data.west_fooddelivery,
+          this.data.west_teachingbuilding,
+          this.data.west_library,
+          this.data.west_lab_building,
+          this.data.west_toilet,
+          this.data.west_store,
+          this.data.west_printing,
+          this.data.west_delivery,
+          this.data.west_gate,
+          this.data.west_bicycle,
+          this.data.west_bus,
+          this.data.west_hospital,
+          this.data.west_sports,
+          this.data.west_scenery,
+          this.data.west_dormitory,
+        ],
       })
       //判断所在位置是否在校区内
       wx.getLocation({
@@ -271,22 +314,24 @@ Page({
   },
   //点击地点进行路径规划
   onPointTap: function(e) {
+    var i=e.detail.markerId;
+    // console.log(this.data.currentdatabase);
     var startPoint = JSON.stringify({
       'name':this.data.markers[0].callout.content,
       'latitude':this.data.markers[0].latitude,
       'longitude':this.data.markers[0].longitude
     });
     var endPoint = JSON.stringify({
-        'name': this.data.markers[1].label.content,
-        'latitude': this.data.markers[1].latitude,
-        'longitude': this.data.markers[1].longitude,
+        'name': this.data.markers[i].label.content,
+        'latitude': this.data.markers[i].latitude,
+        'longitude': this.data.markers[i].longitude,
     });
     this.setData({
       hidden:false,
-      modalname:this.data.currentdatabase.name,
+      modalname:this.data.currentdatabase[i-1].name,
       startPoint:startPoint,
       endPoint:endPoint,
-      place_img_src:this.data.currentdatabase.img
+      place_img_src:this.data.currentdatabase[i-1].img
     })
   },
   modalcancel:function(e)
@@ -320,4 +365,10 @@ Page({
       })
     })
   },
+  backToCurLocation:function(e){
+    this.setData({
+      center_lat:this.data.markers[0].latitude,
+      center_long:this.data.markers[0].longitude,
+    })
+  }
 })

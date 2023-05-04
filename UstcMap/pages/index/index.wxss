@@ -73,3 +73,11 @@
   position: absolute;
   z-index: 1;
 }
+.location{
+  position: absolute;
+  margin-top: 200rpx;
+  margin-left: 630rpx;
+  width:70rpx;
+  height:70rpx;
+  z-index: 20;
+}
