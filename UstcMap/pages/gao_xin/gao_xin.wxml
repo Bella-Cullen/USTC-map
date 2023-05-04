@@ -1,7 +1,7 @@
 <view class='framework'>
    <view class='input-position'>
       <image src='../../images/searchIcon.jpg' class='search-image'></image>
-       <input class="input" placeholder="搜索想要去的地方" placeholder-style="color:#bdbdbd;" bindinput="inputplace" value="{{input_txt}}" bindtap="click_input"/>
+       <input class="input" placeholder="搜索想要去的地方(单个地点)" placeholder-style="color:#bdbdbd;" bindinput="inputplace" value="{{input_txt}}" bindtap="click_input"/>
        <view class='line'></view>
        <view class='search-text' bindtap="nearby_search">搜索</view>
    </view>

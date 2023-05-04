@@ -1,2 +1,2 @@
-<!--pages/tips/tips.wxml-->
-<text>pages/tips/tips.wxml</text>
+<button class="btn1" bindtap="show1">中科大新生指北</button>
+<button class="btn2" bindtap="show2">中科大不完全入学指南</button>
