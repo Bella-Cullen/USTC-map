@@ -10,28 +10,10 @@ Page({
   },
   //data
   data:{
-    //app.data
-    west_canteen:app.globalData.campus[0].data_west.food.canteen,
-    west_fruit:app.globalData.campus[0].data_west.food.fruit,
-    west_fooddelivery:app.globalData.campus[0].data_west.food.food_delivery,
-    west_teachingbuilding:app.globalData.campus[0].data_west.study.teaching_building,
-    west_library:app.globalData.campus[0].data_west.study.library,
-    west_lab_building:app.globalData.campus[0].data_west.study.lab_building,
-    west_toilet:app.globalData.campus[0].data_west.convenience.toilet,
-    west_delivery:app.globalData.campus[0].data_west.convenience.delivery,
-    west_store:app.globalData.campus[0].data_west.convenience.store,
-    west_printing:app.globalData.campus[0].data_west.convenience.printing,
-    west_gate:app.globalData.campus[0].data_west.traffic.gate,
-    west_bicycle:app.globalData.campus[0].data_west.traffic.bicycle,
-    west_bus:app.globalData.campus[0].data_west.traffic.bus,
-    west_sports:app.globalData.campus[0].data_west.sports.sports,
-    west_scenery:app.globalData.campus[0].data_west.scenery.scenery,
-    west_dormitory:app.globalData.campus[0].data_west.dormitory.dormitory,
-    west_hospital:app.globalData.campus[0].data_west.hospital.hospital,
     app_data:[],
-
     hidden:true,
     search_hidden:true,
+    page_hidden:true,
     markers:[],
     inputvalue:'',
     input_txt:'',
@@ -43,9 +25,10 @@ Page({
     modalname:"",
     center_lat:31.838293,
     center_long:117.255652,
+    fraction:0.000001,
+    cur_page:[""],
   },
   //获取输入的查询地址
-  //TODO:模糊搜索算法改进:严格还是宽松?条目数量限制?
   inputplace:function(e){
     var value=e.detail.value;
     var flag1=true;
@@ -68,12 +51,22 @@ Page({
     var re2=new RegExp(text2);
     var res=[];
     var st=new Set();
-    for(var j=0;j<this.data.app_data.length;j++)
+    for(var i0=0;i0<this.data.app_data.length;i0++)
+    for(var i1=0;i1<this.data.app_data[i0].length;i1++)
+    for(var i2=0;i2<this.data.app_data[i0][i1].length;i2++)
     {
-      var place_lst=this.data.app_data[j];
+      var place_lst=this.data.app_data[i0][i1][i2];
       var len=place_lst.length;     
       for(var i=0;i<len;i++){
-        if(flag1&&(re1.test(place_lst[i].name)||re2.test(place_lst[i].name))&&!st.has(place_lst[i].name)){
+        if(flag1==false||res.length>=15)//最多显示15条
+          break;
+        if(st.has(place_lst[i].name))
+          continue;
+        if(re1.test(place_lst[i].name)||re2.test(place_lst[i].name)){
+          res.push(place_lst[i]);
+          st.add(place_lst[i].name);
+        }
+        else if(place_lst[i].other_name!=""&&(re1.test(place_lst[i].other_name)||re2.test(place_lst[i].other_name))){
           res.push(place_lst[i]);
           st.add(place_lst[i].name);
         }
@@ -118,9 +111,11 @@ Page({
     var mark=[];
     mark.push(this.data.markers[0]);
     //待匹配的地址数组
-    for(var j=0;j<this.data.app_data.length;j++)
+    for(var i0=0;i0<this.data.app_data.length;i0++)
+    for(var i1=0;i1<this.data.app_data[i0].length;i1++)
+    for(var i2=0;i2<this.data.app_data[i0][i1].length;i2++)
     {
-      var place_lst=this.data.app_data[j];
+      var place_lst=this.data.app_data[i0][i1][i2];
       var len=place_lst.length;
       //匹配,精确搜索
       for(var i=0;i<len;i++){
@@ -137,6 +132,7 @@ Page({
       duration: 2000
     })
     //更新markers标记点
+    var door_num=100;
     for(var i=0;i<res.length;i++) {
       let lat = res[i].latitude;
       let lon = res[i].longtitude;
@@ -162,6 +158,30 @@ Page({
         }
       }
       mark.push(mark_tmp);
+      for(var j=0;j<res[i].doors.length;j++){
+        mark_tmp={
+          id:door_num,
+          latitude: res[i].doors[j].latitude,
+          longitude: res[i].doors[j].longtitude,
+          iconPath: "../../images/doors.png",
+          width: 10,
+          height: 10,
+          label: {
+            content: res[i].doors[j].name,
+            color: '#4B0082',
+            bgColor:'#FFFFFF',
+            fontSize: 7,
+            anchorX:2,
+            anchorY:-2,
+            borderRadius: 5,
+            borderWidth: 1,
+            borderColor: '#6495ED',
+            padding: 1,
+          }
+        }
+        door_num++;
+        mark.push(mark_tmp);
+      }
     }
     this.setData({
       markers:mark,
@@ -176,24 +196,11 @@ Page({
       var that = this;
       this.setData({
         search_hidden:true,
+        fraction:0.000001,
         app_data:[
-          this.data.west_canteen,
-          this.data.west_fruit,
-          this.data.west_fooddelivery,
-          this.data.west_teachingbuilding,
-          this.data.west_library,
-          this.data.west_lab_building,
-          this.data.west_toilet,
-          this.data.west_store,
-          this.data.west_printing,
-          this.data.west_delivery,
-          this.data.west_gate,
-          this.data.west_bicycle,
-          this.data.west_bus,
-          this.data.west_hospital,
-          this.data.west_sports,
-          this.data.west_scenery,
-          this.data.west_dormitory,
+          app.globalData.campus[0].data_west,
+          app.globalData.campus[0].data_mid,
+          app.globalData.campus[0].data_east,
         ],
       })
       //判断所在位置是否在校区内
@@ -315,6 +322,10 @@ Page({
   //点击地点进行路径规划
   onPointTap: function(e) {
     var i=e.detail.markerId;
+    if(i>=100){
+      console.log("return");
+      return;
+    }
     // console.log(this.data.currentdatabase);
     var startPoint = JSON.stringify({
       'name':this.data.markers[0].callout.content,
@@ -328,10 +339,25 @@ Page({
     });
     this.setData({
       hidden:false,
+      page_hidden:true,
       modalname:this.data.currentdatabase[i-1].name,
       startPoint:startPoint,
       endPoint:endPoint,
       place_img_src:this.data.currentdatabase[i-1].img
+    })
+    if(this.data.currentdatabase[i-1].page_link!=""){
+      this.setData({
+        page_hidden:false,
+        cur_page:this.data.currentdatabase[i-1].page_link,
+      })
+    }
+  },
+  page_click:function(){
+    wx.previewImage({
+      urls: this.data.cur_page,
+      success:(res=>{
+        console.log('接口调用成功',res)
+      })
     })
   },
   modalcancel:function(e)
@@ -366,9 +392,11 @@ Page({
     })
   },
   backToCurLocation:function(e){
+    console.log(this.data.center_lat)
     this.setData({
-      center_lat:this.data.markers[0].latitude,
-      center_long:this.data.markers[0].longitude,
+      center_lat:this.data.markers[0].latitude+this.data.fraction,
+      center_long:this.data.markers[0].longitude+this.data.fraction,
+      fraction:-this.data.fraction,
     })
   }
 })

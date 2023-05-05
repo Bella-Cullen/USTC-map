@@ -1,415 +1,724 @@
+//page_link
 App({
   globalData: {
     campus:[
       {
-      "data_west":{
-        "food":{
-          "canteen":[
+      "data_west":[
+        [//food
+          [//canteen
             {
               latitude:31.837194,
               longtitude:117.258628,
+              doors:[],
               name:"芳华餐厅",
-              img:["https://cwa0419.github.io/birthday/assets/banner.png"],
-              text:"",
+              other_name:"芳华食堂",
+              img:[""],
+              page_link:"",
             },
             {
-              latitude:31.840702,
-              longtitude:117.253928,
+              latitude:31.840690,
+              longtitude:117.253785,
+              doors:[
+                {
+                  latitude:31.840685,
+                  longtitude:117.253665,
+                  name:"西门",
+                },
+                {
+                  latitude:31.840682,
+                  longtitude:117.253906,
+                  name:"东门",
+                },
+              ],
               name:"西区学生食堂",
-              img:[""],
-              text:"",
+              other_name:"西区学生餐厅",
+              img:["https://sd.qunliao.info/fastdfs3/M00/B6/80/ChOxM1xC82CAI3i-AABq8gjkHe8881.png"],
+              page_link:["https://sd.qunliao.info/fastdfs4/M00/C8/FF/ChNLklybTdGAZ1ZbAAAat5i0MFQ461.jpg"],
             },
             {
               latitude:31.840485,
               longtitude:117.253780,
+              doors:[],
               name:"金桔餐厅",
+              other_name:"金桔食堂",
               img:[""],
-              text:"",
+              page_link:"",
             },
           ],
-          "fruit":[
+          [//fruit
             {
               latitude:31.840184,
               longtitude:117.254530,
+              doors:[],
               name:"水果",
+              other_name:"",
               img:[""],
-              text:"",
-            },
-          ],
-          "food_delivery":[
-            {
-              latitude:31.841206,
-              longtitude:117.257026,
-              name:"外卖",
-              img:[""],
-              text:"",
-            },
-            {
-              latitude:31.838787,
-              longtitude:117.259606,
-              name:"外卖",
-              img:[""],
-              text:"",
-            },
-          ],
-        },
-        "study":{
-          "teaching_building":[
-            {
-              latitude:31.838449,
-              longtitude:117.255318,
-              name:"三教A楼",
-              img:[""],
-              text:"",
-            },
-            {
-              latitude:31.838246,
-              longtitude:117.255026,
-              name:"三教B楼",
-              img:[""],
-              text:"",
-            },
-            {
-              latitude:31.838028,
-              longtitude:117.254451,
-              name:"三教C楼",
-              img:[""],
-              text:"",
-            },
-            {
-              latitude:31.837496,
-              longtitude:117.255969,
-              name:"电一楼",
-              img:[""],
-              text:"",
-            },
-            {
-              latitude:31.837672,
-              longtitude:117.254896,
-              name:"电四楼",
-              img:[""],
-              text:"",
-            },
-            
-        {
-          latitude:31.837177,
-          longtitude:117.256003,
-          name:"电三楼",
-          img:[""],
-          text:"",
-        },
-        {
-          latitude:31.837502,
-          longtitude:117.256792,
-          name:"电二楼",
-          img:[""],
-          text:"",
-        },
-        {
-          latitude:31.838289,
-          longtitude:117.256995,
-          name:"力一楼",
-          img:[""],
-          text:"",
-        },
-        {
-          latitude:31.837988,
-          longtitude:117.257416,
-          name:"力二楼",
-          img:[""],
-          text:"",
-        },
-        {
-          latitude:31.838397,
-          longtitude:117.258171,
-          name:"力三楼",
-          img:[""],
-          text:"",
-        },
-          ],
-          "library":[
-            {
-              latitude:31.839098,
-              longtitude:117.257344,
-              name:"图书馆",
-              img:[""],
-              text:"",
-            },
-          ],
-          "lab_building":[
-          ],
-        },
-        "convenience":{
-          "toilet":[
-            {
-              latitude:31.839480,
-              longtitude:117.253292,
-              name:"厕所",
-              img:[""],
-              text:"",
-            },
-            {
-              latitude:31.838321,
-              longtitude:117.259490,
-              name:"厕所",
-              img:[""],
-              text:"",
-            },
-          ],
-          "delivery":[
-            {
-              latitude:31.837939,
-              longtitude:117.259445,
-              name:"小木屋",
-              img:[""],
-              text:"",
-            },
-          ],
-          "store":[
-            {
-              latitude:31.840884,
-              longtitude:117.254561,
-              name:"超市",
-              img:[""],
-              text:"",
-            },
-            {
-              latitude:31.840642,
-              longtitude:117.254851,
-              name:"超市",
-              img:[""],
-              text:"",
-            },
-            {
-              latitude:31.840151,
-              longtitude:117.253276,
-              name:"小店",
-              img:[""],
-              text:"好像有打气筒可以借用?也可以买足球",
-            },
-            {
-              latitude:31.839973,
-              longtitude:117.254523,
-              name:"超市",
-              img:[""],
-              text:"",
-            },
-            {
-              latitude:31.838367,
-              longtitude:117.259462,
-              name:"超市",
-              img:[""],
-              text:"",
-            },
-          ],
-          "printing":[
-            {
-              latitude:31.840658,
-              longtitude:117.255476,
-              name:"文印",
-              img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.838406,
               longtitude:117.259575,
+              doors:[],
               name:"水果",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
           ],
-        },
-        "traffic":{
-          "gate":[
+          [//food_delivery
+            {
+              latitude:31.841206,
+              longtitude:117.257026,
+              doors:[],
+              name:"外卖",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.838787,
+              longtitude:117.259606,
+              doors:[],
+              name:"外卖",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+          ],
+        ],
+        [//study
+          [//teaching_building
+            {
+              latitude:31.838449,
+              longtitude:117.255318,
+              doors:[],
+              name:"三教A楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.838246,
+              longtitude:117.255026,
+              doors:[],
+              name:"三教B楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.838028,
+              longtitude:117.254451,
+              doors:[],
+              name:"三教C楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+          ],
+          [//library
+            {
+              latitude:31.839098,
+              longtitude:117.257344,
+              doors:[],
+              name:"西区图书馆",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+          ],
+          [//lab_building
+            {
+              latitude:31.837496,
+              longtitude:117.255969,
+              doors:[],
+              name:"电一楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.837672,
+              longtitude:117.254896,
+              doors:[],
+              name:"电四楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },         
+            {
+              latitude:31.837177,
+              longtitude:117.256003,
+              doors:[],
+              name:"电三楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.837502,
+              longtitude:117.256792,
+              doors:[],
+              name:"电二楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.838289,
+              longtitude:117.256995,
+              doors:[],
+              name:"力一楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.837988,
+              longtitude:117.257416,
+              doors:[],
+              name:"力二楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.838397,
+              longtitude:117.258171,
+              doors:[],
+              name:"力三楼",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+          ],
+        ],
+        [//convenience
+          [//toilet
+            {
+              latitude:31.839480,
+              longtitude:117.253292,
+              doors:[],
+              name:"厕所",
+              other_name:"卫生间",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.838321,
+              longtitude:117.259490,
+              doors:[],
+              name:"厕所",
+              other_name:"卫生间",
+              img:[""],
+              page_link:"",
+            },
+          ],
+          [//delivery
+            {
+              latitude:31.837939,
+              longtitude:117.259445,
+              doors:[],
+              name:"小木屋",
+              other_name:"快递",
+              img:[""],
+              page_link:"",
+            },
+          ],
+          [//store
+            {
+              latitude:31.840884,
+              longtitude:117.254561,
+              doors:[],
+              name:"超市",
+              other_name:"小店",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.840642,
+              longtitude:117.254851,
+              doors:[],
+              name:"超市",
+              other_name:"小店",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.840151,
+              longtitude:117.253276,
+              doors:[],
+              name:"超市",
+              other_name:"小店",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.839973,
+              longtitude:117.254523,
+              doors:[],
+              name:"超市",
+              other_name:"小店",
+              img:[""],
+              page_link:"",
+            },
+            {
+              latitude:31.838367,
+              longtitude:117.259462,
+              doors:[],
+              name:"超市",
+              other_name:"小店",
+              img:[""],
+              page_link:"",
+            },
+          ],
+          [//printing
+            {
+              latitude:31.840658,
+              longtitude:117.255476,
+              doors:[],
+              name:"文印",
+              other_name:"",
+              img:[""],
+              page_link:"",
+            },
+          ],
+        ],
+        [//traffic
+          [//gate
             {
               latitude:31.841225,
               longtitude:117.256759,
+              doors:[],
               name:"西区北门",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.838758,
               longtitude:117.259700,
+              doors:[],
               name:"西区东门",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
           ],
-          "bicycle":[
+          [//bicycle
           ],
-          "bus":[
+          [//bus
             {
               latitude:31.839098,
               longtitude:117.257344,
-              name:"校园公交站",
-              zone:"west",
-              category:"traffic_bus",
+              doors:[],
+              name:"西区公交站",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
           ],
-        },
-        "sports":{
-          "sports":[
+        ],
+        [//sports
+          [//sports
             {
               latitude:31.839356,
               longtitude:117.252996,
+              doors:[],
               name:"西区操场",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.839488,
               longtitude:117.253480,
+              doors:[],
               name:"乒乓球馆",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
           ],
-        },
-        "scenery":{
-          "scenery":[
+        ],
+        [//scenery
+          [//scenery
             {
               latitude:31.837867,
               longtitude:117.255564,
+              doors:[],
               name:"严济慈广场",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
           ],
-        },
-        "dormitory":{
-          "dormitory":[
+        ],
+        [//dormitory
+          [//dormitory
             {
               latitude:31.841023,
               longtitude:117.255007,
+              doors:[],
               name:"学生公寓1号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.840683,
               longtitude:117.255001,
+              doors:[],
               name:"学生公寓2号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.840292,
               longtitude:117.254863,
+              doors:[],
               name:"学生公寓3号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.840401,
               longtitude:117.255449,
+              doors:[],
               name:"学生公寓6号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.840104,
               longtitude:117.253974,
+              doors:[],
               name:"学生公寓4号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.839742,
               longtitude:117.254177,
+              doors:[],
               name:"学生公寓5号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.838515,
               longtitude:117.259134,
+              doors:[],
               name:"1幢宿舍",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.838245,
               longtitude:117.259023,
+              doors:[],
               name:"2幢宿舍",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.837958,
               longtitude:117.258984,
+              doors:[],
               name:"3幢宿舍",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.837682,
               longtitude:117.258947,
+              doors:[],
               name:"4幢宿舍",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.837471,
               longtitude:117.258906,
+              doors:[],
               name:"5幢宿舍",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.836707,
               longtitude:117.258753,
+              doors:[],
               name:"学生公寓11号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.836361,
               longtitude:117.258691,
+              doors:[],
               name:"学生公寓10号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.835979,
               longtitude:117.258609,
+              doors:[],
               name:"学生公寓9号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.835620,
               longtitude:117.258266,
+              doors:[],
               name:"学生公寓8号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
             {
               latitude:31.835193,
               longtitude:117.258197,
+              doors:[],
               name:"学生公寓7号楼",
+              other_name:"",
               img:[""],
-              text:"",
+              page_link:"",
             },
           ],
-        },
-        "hospital":{
-          "hospital":[
+        ],
+        [//hospital
+          [//hospital
           ],
-        }
-      },
-      "data_mid":{},
-      "data_east":{},
-      "data_gaoxin":{},
+        ],
+      ],
+      "data_mid":[
+        [//food
+          [//canteen
+
+          ],
+          [//fruit
+
+          ],
+          [//food_delivery
+
+          ],
+        ],
+        [//study
+          [//teaching_building
+
+          ],
+          [//library
+
+          ],
+          [//lab_building
+
+          ],
+        ],
+        [//convenience
+          [//toilet
+
+          ],
+          [//delivery
+          
+          ],
+          [//store
+
+          ],
+          [//printing
+
+          ],
+        ],
+        [//traffic
+          [//gate
+
+          ],
+          [//bicycle
+
+          ],
+          [//bus
+
+          ],
+        ],
+        [//sports
+          [//sports
+
+          ],
+        ],
+        [//scenery
+          [//scenery
+
+          ],
+        ],
+        [//dormitory
+          [//dormitory
+
+          ],
+        ],
+        [//hospital
+          [//hospital
+
+          ],
+        ],
+      ],
+      "data_east":[
+        [//food
+          [//canteen
+
+          ],
+          [//fruit
+
+          ],
+          [//food_delivery
+
+          ],
+        ],
+        [//study
+          [//teaching_building
+
+          ],
+          [//library
+
+          ],
+          [//lab_building
+
+          ],
+        ],
+        [//convenience
+          [//toilet
+
+          ],
+          [//delivery
+          
+          ],
+          [//store
+
+          ],
+          [//printing
+
+          ],
+        ],
+        [//traffic
+          [//gate
+
+          ],
+          [//bicycle
+
+          ],
+          [//bus
+
+          ],
+        ],
+        [//sports
+          [//sports
+
+          ],
+        ],
+        [//scenery
+          [//scenery
+
+          ],
+        ],
+        [//dormitory
+          [//dormitory
+
+          ],
+        ],
+        [//hospital
+          [//hospital
+
+          ],
+        ],
+      ],
+      "data_gaoxin":[
+        [//food
+          [//canteen
+
+          ],
+          [//fruit
+
+          ],
+          [//food_delivery
+
+          ],
+        ],
+        [//study
+          [//teaching_building
+
+          ],
+          [//library
+
+          ],
+          [//lab_building
+
+          ],
+        ],
+        [//convenience
+          [//toilet
+
+          ],
+          [//delivery
+          
+          ],
+          [//store
+
+          ],
+          [//printing
+
+          ],
+        ],
+        [//traffic
+          [//gate
+
+          ],
+          [//bicycle
+
+          ],
+          [//bus
+
+          ],
+        ],
+        [//sports
+          [//sports
+
+          ],
+        ],
+        [//scenery
+          [//scenery
+
+          ],
+        ],
+        [//dormitory
+          [//dormitory
+
+          ],
+        ],
+        [//hospital
+          [//hospital
+
+          ],
+        ],
+      ],
       }
     ],
     surroundings:[
-
     ]
   },
   onLaunch() {
-
   },
 })
