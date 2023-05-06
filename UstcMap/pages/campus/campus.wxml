@@ -1,2 +1,12 @@
-<!--pages/campus/campus.wxml-->
-<text>pages/campus/campus.wxml</text>
+<view class="select_top">
+  <image class="select_left" src="{{select_left}}"></image>
+  <view class="select_title">校区选择</view>
+  <input class="select_input" disabled="true" placeholder="请选择要搜索的校区" bindtap="select_show" value="{{select_value}}"></input>
+  <image class="select_right" src="{{select_right}}" bindtap="select_show"></image>
+</view>
+
+<view class="select_result" hidden="{{select_hidden}}">
+  <view class="result" wx:for="{{select_array}}" wx:key="index" bindtap="getSelectValue" data-postname="{{item}}">
+    <view>{{item}}</view>
+  </view>
+</view>

@@ -1,1 +1,43 @@
-/* pages/campus/campus.wxss */
+.select_top{
+  display: flex;
+  flex-direction: row;
+  margin-top: 70rpx;
+  margin-left: 70rpx;
+}
+.select_left{
+  width:60rpx;
+  height:60rpx;
+}
+.select_title{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: large;
+}
+.select_input{
+  width:300rpx;
+  margin-top: 12rpx;
+  margin-left: 50rpx;
+}
+.select_right{
+  width:60rpx;
+  height:60rpx;
+}
+.select_result {
+  position: absolute;
+  left:300rpx;
+  width: 300rpx;
+  background: #fff;
+  z-index: 100;
+}
+.result {
+  height: 50rpx;
+  line-height: 70rpx;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  padding: 0 30rpx;
+  color: #333;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

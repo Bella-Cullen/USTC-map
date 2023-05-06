@@ -1,66 +1,21 @@
-// pages/campus/campus.js
+var app=getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    select_left:"../../images/select_left.png",
+    select_right:"../../images/select_right.png",
+    select_hidden:true,
+    select_array:['西校区','中校区','东校区','东中西校区','高新区'],
+    select_value:'',
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  select_show:function(e){
+    this.setData({
+      select_hidden:false,
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  getSelectValue:function(e){
+    this.setData({
+      select_hidden:true,
+      select_value:e.currentTarget.dataset.postname,
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
 })
