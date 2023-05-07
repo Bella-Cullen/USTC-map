@@ -193,116 +193,116 @@ Page({
   //生命周期函数--监听页面加载
   onLoad: function (options) {
     wx.stopPullDownRefresh() //刷新完成后停止下拉刷新动效       
-      var that = this;
-      this.setData({
-        search_hidden:true,
-        fraction:0.000001,
-        app_data:[
-          app.globalData.campus[0].data_west,
-          app.globalData.campus[0].data_mid,
-          app.globalData.campus[0].data_east,
-        ],
-      })
-      //判断所在位置是否在校区内
-      wx.getLocation({
-        isHighAccuracy:true,
-		    type:'gcj02',
-        success:function(res)
+    var that = this;
+    this.setData({
+      search_hidden:true,
+      fraction:0.000001,
+      app_data:[
+        app.globalData.campus[0].data_west,
+        app.globalData.campus[0].data_mid,
+        app.globalData.campus[0].data_east,
+      ],
+    })
+    //判断所在位置是否在校区内
+    wx.getLocation({
+      isHighAccuracy:true,
+      type:'gcj02',
+      success:function(res)
+      {
+        // console.log(res)
+        var nowlatitude = res.latitude
+        var nowlongitude = res.longitude
+        if((nowlatitude > 31.832433) && (nowlatitude < 31.841758) && (nowlongitude > 117.251378) && (nowlongitude < 117.273573))
         {
-          // console.log(res)
-          var nowlatitude = res.latitude
-          var nowlongitude = res.longitude
-          if((nowlatitude > 31.832433) && (nowlatitude < 31.841758) && (nowlongitude > 117.251378) && (nowlongitude < 117.273573))
-          {
-            that.setData({
-              markers:[
-                {
-                  id:0,
-                  latitude:nowlatitude,
-                  longitude:nowlongitude,
-                  iconPath:"../../images/mapcenter.png",
-                  width:25,
-                  height:25,
-                  callout:{
-                    content:"当前位置",
-                    color:'#0000ff',
-                    fontSize:13,
-                    borderRadius:5,
-                    borderWidth:1,
-                    borderColor:'#0000ff',
-                    padding:2,
-                    display:'ALWAYS'
-                  }
-                }
-              ],
-              center_lat:nowlatitude,
-              center_long:nowlongitude,
-            })
-          }else{
-            wx.showModal({
-              title:'提示',
-              content:'检测到当前位置不在中科大校区内，是否切换到中科大校区默认位置？',
-              success(res)
+          that.setData({
+            markers:[
               {
-                if(res.confirm)
-                {
-                  that.setData({
-                    markers:[
-                      {
-                        id:0,
-                        latitude:31.838293,
-                        longitude:117.255652,
-                        iconPath:"../../images/mapcenter.png",
-                        width:25,
-                        height:25,
-                        callout:{
-                          content:"西区中心",
-                          color:'#0000ff',
-                          fontSize:13,
-                          borderRadius:5,
-                          borderWidth:1,
-                          borderColor:'#0000ff',
-                          padding:2,
-                          display:'BYCLICK'
-                        }
-                      }
-                    ],
-                    center_lat:31.838293,
-                    center_long:117.255652,
-                  })
-                }else if(res.cancel)
-                {
-                  that.setData({
-                    markers:[
-                      {
-                        id:0,
-                        latitude:nowlatitude,
-                        longitude:nowlongitude,
-                        iconPath:"../../images/mapcenter.png",
-                        width:25,
-                        height:25,
-                        callout:{
-                          content:"当前位置",
-                          color:'#0000ff',
-                          fontSize:13,
-                          borderRadius:5,
-                          borderWidth:1,
-                          borderColor:'#0000ff',
-                          padding:2,
-                          display:'ALWAYS'
-                        }
-                      }
-                    ],
-                    center_lat:nowlatitude,
-                    center_long:nowlongitude,
-                  })
+                id:0,
+                latitude:nowlatitude,
+                longitude:nowlongitude,
+                iconPath:"../../images/mapcenter.png",
+                width:25,
+                height:25,
+                callout:{
+                  content:"当前位置",
+                  color:'#0000ff',
+                  fontSize:13,
+                  borderRadius:5,
+                  borderWidth:1,
+                  borderColor:'#0000ff',
+                  padding:2,
+                  display:'ALWAYS'
                 }
               }
-            })
+            ],
+            center_lat:nowlatitude,
+            center_long:nowlongitude,
+          })
+        }else{
+          wx.showModal({
+            title:'提示',
+            content:'检测到当前位置不在中科大校区内，是否切换到中科大校区默认位置？',
+            success(res)
+            {
+              if(res.confirm)
+              {
+                that.setData({
+                  markers:[
+                    {
+                      id:0,
+                      latitude:31.838293,
+                      longitude:117.255652,
+                      iconPath:"../../images/mapcenter.png",
+                      width:25,
+                      height:25,
+                      callout:{
+                        content:"西区中心",
+                        color:'#0000ff',
+                        fontSize:13,
+                        borderRadius:5,
+                        borderWidth:1,
+                        borderColor:'#0000ff',
+                        padding:2,
+                        display:'BYCLICK'
+                      }
+                    },
+                  ],
+                  center_lat:31.838293,
+                  center_long:117.255652,
+                })
+              }else if(res.cancel)
+              {
+                that.setData({
+                  markers:[
+                    {
+                      id:0,
+                      latitude:nowlatitude,
+                      longitude:nowlongitude,
+                      iconPath:"../../images/mapcenter.png",
+                      width:25,
+                      height:25,
+                      callout:{
+                        content:"当前位置",
+                        color:'#0000ff',
+                        fontSize:13,
+                        borderRadius:5,
+                        borderWidth:1,
+                        borderColor:'#0000ff',
+                        padding:2,
+                        display:'ALWAYS'
+                      }
+                    }
+                  ],
+                  center_lat:nowlatitude,
+                  center_long:nowlongitude,
+                })
+              }
+            }
+          })
 
-          }
         }
-      });
+      }
+    });
   },
   onReady: function (e) {
     // 使用 wx.createMapContext 获取 map 上下文

@@ -24,14 +24,14 @@
 }
 .select_result {
   position: absolute;
-  left:300rpx;
+  left:295rpx;
   width: 300rpx;
   background: #fff;
   z-index: 100;
 }
 .result {
-  height: 50rpx;
-  line-height: 70rpx;
+  height: 80rpx;
+  line-height: 80rpx;
   text-align: left;
   border-bottom: 1px solid #eee;
   padding: 0 30rpx;
@@ -40,4 +40,363 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.food_top{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+}
+.food_icon{
+  width: 60rpx;
+  height:60rpx;
+}
+.food_title{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: large;
+}
+.food_line{
+  background:darkgray;
+  width: 80%;
+  height: 5rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+}
+.food_content_image{
+  display: flex;
+  flex-direction: row;
+  margin-left: 70rpx;
+  margin-top:20rpx;
+}
+.canteen{
+  width:100rpx;
+  height:100rpx;
+  margin-left: 60rpx;
+}
+.fruit{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 80rpx;
+  margin-top: 12rpx;
+}
+.food_delivery{
+  width:100rpx;
+  height:100rpx;
+  margin-left: 80rpx;
+}
+.food_content_text{
+  display: flex;
+  flex-direction: row;
+  margin-left: 80rpx;
+  margin-top:10rpx;
+}
+.canteen_text{
+  font-size: medium;
+  margin-left: 70rpx;
+  font-family: cursive;
+}
+.fruit_text{
+  font-size: medium;
+  margin-left: 110rpx;
+  font-family: cursive;
+}
+.food_delivery_text{
+  font-size: medium;
+  margin-left: 100rpx;
+  font-family: cursive;
+}
+
+.study_top{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+}
+.study_icon{
+  width: 60rpx;
+  height:60rpx;
+}
+.study_title{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: large;
+}
+.study_line{
+  background:darkgray;
+  width: 80%;
+  height: 5rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+}
+.study_content_image{
+  display: flex;
+  flex-direction: row;
+  margin-left: 70rpx;
+  margin-top:20rpx;
+}
+.teaching_building{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 70rpx;
+  margin-top: 10rpx;
+}
+.library{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 90rpx;
+  margin-top: 10rpx;
+}
+.lab_building{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 90rpx;
+  margin-top: 10rpx;
+}
+.study_content_text{
+  display: flex;
+  flex-direction: row;
+  margin-left: 80rpx;
+  margin-top:10rpx;
+}
+.teaching_building_text{
+  font-size: medium;
+  margin-left: 60rpx;
+  font-family: cursive;
+}
+.library_text{
+  font-size: medium;
+  margin-left: 90rpx;
+  font-family: cursive;
+}
+.lab_building_text{
+  font-size: medium;
+  margin-left: 80rpx;
+  font-family: cursive;
+}
+
+.traffic_top{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+}
+.traffic_icon{
+  width: 60rpx;
+  height:60rpx;
+}
+.traffic_title{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: large;
+}
+.traffic_line{
+  background:darkgray;
+  width: 80%;
+  height: 5rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+}
+.traffic_content_image{
+  display: flex;
+  flex-direction: row;
+  margin-left: 70rpx;
+  margin-top:20rpx;
+}
+.gate{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 70rpx;
+  margin-top: 10rpx;
+}
+.bicycle{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 90rpx;
+  margin-top: 10rpx;
+}
+.bus{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 90rpx;
+  margin-top: 10rpx;
+}
+.traffic_content_text{
+  display: flex;
+  flex-direction: row;
+  margin-left: 80rpx;
+  margin-top:10rpx;
+}
+.gate_text{
+  font-size: medium;
+  margin-left: 70rpx;
+  font-family: cursive;
+}
+.bicycle_text{
+  font-size: medium;
+  margin-left: 90rpx;
+  font-family: cursive;
+}
+.bus_text{
+  font-size: medium;
+  margin-left: 80rpx;
+  font-family: cursive;
+}
+
+.convenience_top{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+}
+.convenience_icon{
+  width: 60rpx;
+  height:60rpx;
+}
+.convenience_title{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: large;
+}
+.convenience_line{
+  background:darkgray;
+  width: 80%;
+  height: 5rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+}
+.convenience_content_image{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50rpx;
+  margin-top:20rpx;
+}
+.toilet{
+  width:110rpx;
+  height:100rpx;
+  margin-left: 50rpx;
+}
+.delivery{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 70rpx;
+  margin-top: 10rpx;
+}
+.store{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 70rpx;
+  margin-top: 10rpx;
+}
+.printing{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 70rpx;
+  margin-top: 10rpx;
+}
+.convenience_content_text{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50rpx;
+  margin-top:10rpx;
+}
+.toilet_text{
+  font-size: medium;
+  margin-left: 60rpx;
+  font-family: cursive;
+}
+.delivery_text{
+  font-size: medium;
+  margin-left: 90rpx;
+  font-family: cursive;
+}
+.store_text{
+  font-size: medium;
+  margin-left: 100rpx;
+  font-family: cursive;
+}
+.printing_text{
+  font-size: medium;
+  margin-left:85rpx;
+  font-family: cursive;
+}
+
+.other_top{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+}
+.other_icon{
+  width: 60rpx;
+  height:60rpx;
+}
+.other_title{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: large;
+}
+.other_line{
+  background:darkgray;
+  width: 80%;
+  height: 5rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+}
+.other_content_image{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50rpx;
+  margin-top:20rpx;
+}
+.sports{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 65rpx;
+  margin-top: 10rpx;
+}
+.scenery{
+  width:80rpx;
+  height:80rpx;
+  margin-left: 80rpx;
+  margin-top: 10rpx;
+}
+.dormitory{
+  width:70rpx;
+  height:70rpx;
+  margin-left: 80rpx;
+  margin-top: 15rpx;
+}
+.hospital{
+  width:75rpx;
+  height:75rpx;
+  margin-left: 75rpx;
+  margin-top: 12rpx;
+}
+.other_content_text{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50rpx;
+  margin-top:10rpx;
+}
+.sports_text{
+  font-size: medium;
+  margin-left: 60rpx;
+  font-family: cursive;
+}
+.scenery_text{
+  font-size: medium;
+  margin-left: 90rpx;
+  font-family: cursive;
+}
+.dormitory_text{
+  font-size: medium;
+  margin-left: 85rpx;
+  font-family: cursive;
+}
+.hospital_text{
+  font-size: medium;
+  margin-left:75rpx;
+  font-family: cursive;
 }

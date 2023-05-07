@@ -309,8 +309,8 @@ App({
           ],
           [//bus
             {
-              latitude:31.839098,
-              longtitude:117.257344,
+              latitude:31.838828,
+              longtitude:117.256579,
               doors:[],
               name:"西区公交站",
               other_name:"",

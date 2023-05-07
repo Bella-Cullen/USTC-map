@@ -4,7 +4,8 @@
     "pages/gao_xin/gao_xin",
     "pages/campus/campus",
     "pages/surrounding/surrounding",
-    "pages/tips/tips"
+    "pages/tips/tips",
+    "pages/campus_next/campus_next"
   ],
   "window": {
     "backgroundTextStyle": "light",

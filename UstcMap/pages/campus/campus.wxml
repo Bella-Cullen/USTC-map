@@ -10,3 +10,97 @@
     <view>{{item}}</view>
   </view>
 </view>
+
+<view class="food">
+  <view class="food_top">
+    <image class="food_icon" src="{{food_icon}}"></image>
+    <view class="food_title">美食</view>
+  </view>
+  <view class="food_line"></view>
+  <view class="food_content_image">
+    <image class="canteen" src="{{canteen_icon}}" bindtap="canteen"></image>
+    <image class="fruit" src="{{fruit_icon}}" bindtap="fruit"></image>
+    <image class="food_delivery" src="{{food_delivery_icon}}" bindtap="food_delivery"></image>
+  </view>
+  <view class="food_content_text">
+    <view class="canteen_text" bindtap="canteen">餐厅</view>
+    <view class="fruit_text" bindtap="fruit">水果</view>
+    <view class="food_delivery_text" bindtap="food_delivery">外卖架</view>
+  </view>
+</view>
+
+<view class="study">
+  <view class="study_top">
+    <image class="study_icon" src="{{study_icon}}"></image>
+    <view class="study_title">学习</view>
+  </view>
+  <view class="study_line"></view>
+  <view class="study_content_image">
+    <image class="teaching_building" src="{{teaching_building_icon}}" bindtap="teaching_building"></image>
+    <image class="library" src="{{library_icon}}" bindtap="library"></image>
+    <image class="lab_building" src="{{lab_building_icon}}" bindtap="lab_building"></image>
+  </view>
+  <view class="study_content_text">
+    <view class="teaching_building_text" bindtap="teaching_building">教学楼</view>
+    <view class="library_text" bindtap="library">图书馆</view>
+    <view class="lab_building_text" bindtap="lab_building">实验楼</view>
+  </view>
+</view>
+
+<view class="traffic">
+  <view class="traffic_top">
+    <image class="traffic_icon" src="{{traffic_icon}}"></image>
+    <view class="traffic_title">出行</view>
+  </view>
+  <view class="traffic_line"></view>
+  <view class="traffic_content_image">
+    <image class="gate" src="{{gate_icon}}" bindtap="gate"></image>
+    <image class="bicycle" src="{{bicycle_icon}}" bindtap="bicycle"></image>
+    <image class="bus" src="{{bus_icon}}" bindtap="bus"></image>
+  </view>
+  <view class="traffic_content_text">
+    <view class="gate_text" bindtap="gate">校门</view>
+    <view class="bicycle_text" bindtap="bicycle">共享单车</view>
+    <view class="bus_text" bindtap="bus">校车</view>
+  </view>
+</view>
+
+<view class="convenience">
+  <view class="convenience_top">
+    <image class="convenience_icon" src="{{convenience_icon}}"></image>
+    <view class="convenience_title">便利</view>
+  </view>
+  <view class="convenience_line"></view>
+  <view class="convenience_content_image">
+    <image class="toilet" src="{{toilet_icon}}" bindtap="toilet"></image>
+    <image class="delivery" src="{{delivery_icon}}" bindtap="delivery"></image>
+    <image class="store" src="{{store_icon}}" bindtap="store"></image>
+    <image class="printing" src="{{printing_icon}}" bindtap="printing"></image>
+  </view>
+  <view class="convenience_content_text">
+    <view class="toilet_text" bindtap="toilet">卫生间</view>
+    <view class="delivery_text" bindtap="delivery">快递</view>
+    <view class="store_text" bindtap="store">超市</view>
+    <view class="printing_text" bindtap="printing">文印</view>
+  </view>
+</view>
+
+<view class="other">
+  <view class="other_top">
+    <image class="other_icon" src="{{other_icon}}"></image>
+    <view class="other_title">其它</view>
+  </view>
+  <view class="other_line"></view>
+  <view class="other_content_image">
+    <image class="sports" src="{{sports_icon}}" bindtap="sports"></image>
+    <image class="scenery" src="{{scenery_icon}}" bindtap="scenery"></image>
+    <image class="dormitory" src="{{dormitory_icon}}" bindtap="dormitory"></image>
+    <image class="hospital" src="{{hospital_icon}}" bindtap="hospital"></image>
+  </view>
+  <view class="other_content_text">
+    <view class="sports_text" bindtap="sports">运动场</view>
+    <view class="scenery_text" bindtap="scenery">风景</view>
+    <view class="dormitory_text" bindtap="dormitory">寝室楼</view>
+    <view class="hospital_text" bindtap="hoapital">医院</view>
+  </view>
+</view>
