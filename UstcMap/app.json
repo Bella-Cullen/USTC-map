@@ -5,7 +5,9 @@
     "pages/campus/campus",
     "pages/surrounding/surrounding",
     "pages/tips/tips",
-    "pages/campus_next/campus_next"
+    "pages/campus_next/campus_next",
+    "pages/surrounding_next/surrounding_next",
+    "pages/surrounding_n_n/surrounding_n_n"
   ],
   "window": {
     "backgroundTextStyle": "light",

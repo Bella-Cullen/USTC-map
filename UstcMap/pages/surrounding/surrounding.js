@@ -1,66 +1,131 @@
-// pages/surrounding/surrounding.js
+var app=getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    restaurant:"../../images/restaurant.png",
+    hotel:"../../images/hotel.png",
+    traffic:"../../images/traffic.png",
+    delivery:"../../images/delivery.png",
+    hospital:"../../images/hospital.png",
+    drug:"../../images/drug.png",
+    sports:"../../images/sports.png",
+    store:"../../images/store.png",
+    hair:"../../images/hair.png",
+    mobile:"../../images/mobile.png",
+    fruit:"../../images/fruit.png",
+    tea:"../../images/tea.png",
+    mall:"../../images/mall.png",
+    scenery:"../../images/scenery.png",
+    cinema:"../../images/cinema.png",
+    ebike:"../../images/ebike.png",
+    glasses:"../../images/glasses.png",
+    bank:"../../images/bank.png",
+    clothes:"../../images/clothes.png",
+    bicycle:"../../images/bicycle.png",
+    other:"../../images/icon5.png",
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  restaurant:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=1',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  hotel:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=11',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  traffic:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=14',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  delivery:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=10',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
+  hospital:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=15',
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
+  drug:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=6',
+    })
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
+  sports:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=2',
+    })
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
+  store:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=5',
+    })
+  },
+  hair:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=7',
+    })
+  },
+  mobile:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=9',
+    })
+  },
+  fruit:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=3',
+    })
+  },
+  tea:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=4',
+    })
+  },
+  mall:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=16',
+    })
+  },
+  scenery:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=17',
+    })
+  },
+  cinema:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=18',
+    })
+  },
+  ebike:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=13',
+    })
+  },
+  glasses:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=19',
+    })
+  },
+  bank:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=8',
+    })
+  },
+  clothes:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=0',
+    })
+  },
+  bicycle:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=12',
+    })
+  },
+  other:function(){
+    wx.navigateTo({
+      url: '../../pages/surrounding_next/surrounding_next?mode=20',
+    })
+  },
 })

@@ -1,0 +1,10 @@
+<view class="search_result_top">
+  <view class="search_result" wx:for="{{search_array}}" wx:key="index" bindtap="navigate_next" data-postname="{{item}}">
+    <image class="img" src="{{item.img}}"></image>
+    <view class="right">
+      <view class="name">{{item.name}}</view>
+      <view class="line"></view>
+      <view class="intro">{{item.intro}}</view>
+    </view>
+  </view>
+</view>

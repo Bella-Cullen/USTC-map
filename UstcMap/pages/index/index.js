@@ -183,12 +183,15 @@ Page({
         mark.push(mark_tmp);
       }
     }
-    this.setData({
-      markers:mark,
-      currentdatabase:res,
-      center_long:res[0].longtitude,
-      center_lat:res[0].latitude,
-    })
+    if(res.length)
+    {
+      this.setData({
+        markers:mark,
+        currentdatabase:res,
+        center_long:res[0].longtitude,
+        center_lat:res[0].latitude,
+      })
+    }
   },
   //生命周期函数--监听页面加载
   onLoad: function (options) {

@@ -1,0 +1,28 @@
+.search_result{
+  margin-top: 60rpx;
+  margin-left: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+.img{
+  width: 200rpx;
+  height: 200rpx;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+}
+.name{
+  font-size: large;
+}
+.line{
+  background:darkgray;
+  width: 400rpx;
+  height: 5rpx;
+  margin-top: 20rpx;
+}
+.intro{
+  font-size: x-small;
+  margin-top: 20rpx;
+}

@@ -3,7 +3,7 @@
 Page({
   data: {
     pdf_url1:"https://myustc.feixu.site/hello/%E4%B8%AD%E7%A7%91%E5%A4%A7%E6%96%B0%E7%94%9F%E6%8C%87%E5%8C%97.pdf",
-    pdf_url2:"https://sunxk2020.github.io/pdf/ustcnew.pdf",
+    pdf_url2:"https://sbsk.gitee.io/pdf/ustcnew.pdf",
     book_title_icon:"../../images/book_title.png",
     book_book_icon:"../../images/book_book.png",
     link_title_icon:"../../images/link_title.png",
