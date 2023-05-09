@@ -1,3 +1,4 @@
+//TODO1:历史记录
 var app = getApp();
 Page({
   //设置下拉刷新
@@ -27,10 +28,22 @@ Page({
     center_long:117.255652,
     fraction:0.000001,
     cur_page:[""],
+    history_hidden:true,
+    history:[],
   },
   //获取输入的查询地址
   inputplace:function(e){
     var value=e.detail.value;
+    if(value==''){
+      this.setData({
+        history_hidden:false,
+      })
+    }
+    else{
+      this.setData({
+        history_hidden:true,
+      })
+    }
     var flag1=true;
     if(value=="")flag1=false;
     var arr1=[];
@@ -88,6 +101,7 @@ Page({
       search_hidden:true,
       inputvalue:e.currentTarget.dataset.postname,
       input_txt:e.currentTarget.dataset.postname,
+      history_hidden:true,
     })
   },
   click_input:function(e){
@@ -96,16 +110,27 @@ Page({
         search_hidden:false,
       })
     }
+    if(this.data.history.length&&this.data.inputvalue==''){
+      this.setData({
+        history_hidden:false,
+      })
+    }
   },
   map_click:function(e){
     this.setData({
       search_hidden:true,
+      history_hidden:true,
     })
   },
   //搜索
   nearby_search:function(){
     //text是输入的地址
     var text = this.data.inputvalue;
+    var his=this.data.history;
+    his.unshift(text);
+    this.setData({
+      history:his,
+    })
     //返回的匹配完成的地址数组
     var res=[];
     var mark=[];
@@ -199,6 +224,7 @@ Page({
     var that = this;
     this.setData({
       search_hidden:true,
+      history_hidden:true,
       fraction:0.000001,
       app_data:[
         app.globalData.campus[0].data_west,

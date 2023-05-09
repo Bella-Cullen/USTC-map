@@ -7,7 +7,7 @@
 .top_txt{
   display: flex;
   flex-direction: row;
-  margin-top: 20rpx;
+  margin-top: 10rpx;
   margin-left: 0rpx;
 }
 .img{

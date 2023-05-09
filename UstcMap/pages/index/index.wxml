@@ -1,6 +1,6 @@
 <view class='framework'>
    <view class='input-position'>
-      <image src='../../images/searchIcon.jpg' class='search-image'></image>
+      <image src='../../images/searchIcon.png' class='search-image'></image>
        <input class="input" placeholder="搜索想要去的地方" placeholder-style="color:#bdbdbd;" bindinput="inputplace" value="{{input_txt}}" bindtap="click_input"/>
        <view class='line'></view>
        <view class='search-text' bindtap="nearby_search">搜索</view>
@@ -10,6 +10,12 @@
 <view class="searchresult" wx:if="{{inputvalue != ''}}" hidden="{{search_hidden}}">
   <view class="result" wx:for="{{search_result}}" wx:key="index" bindtap="getInputValue" data-postname="{{item.name}}">
     <view>{{item.name}}</view>
+  </view>
+</view>
+
+<view class="searchresult" hidden="{{history_hidden}}">
+  <view class="result" wx:for="{{history}}" wx:key="index" bindtap="getInputValue" data-postname="{{item}}">
+    <view>{{item}}</view>
   </view>
 </view>
 

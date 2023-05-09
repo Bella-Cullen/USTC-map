@@ -31,7 +31,7 @@ Page({
   },
   select_show:function(e){
     this.setData({
-      select_hidden:false,
+      select_hidden:!this.data.select_hidden,
     })
   },
   getSelectValue:function(e){

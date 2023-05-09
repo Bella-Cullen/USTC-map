@@ -733,7 +733,7 @@ App({
           latitude:31.837881,
           longtitude:117.265668,
           name:"汉堡王",
-          img:[""],
+          img:["/images/icon1.png"],
           intro:"",
         },
       ],
