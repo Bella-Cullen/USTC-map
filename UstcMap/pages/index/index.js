@@ -127,7 +127,7 @@ Page({
     //text是输入的地址
     var text = this.data.inputvalue;
     var his=this.data.history;
-    his.unshift(text);
+    if(!his.includes(text))his.unshift(text);
     this.setData({
       history:his,
     })

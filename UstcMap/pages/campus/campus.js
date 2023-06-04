@@ -5,7 +5,7 @@ Page({
     select_right:"../../images/select_right.png",
     select_hidden:true,
     select_array:['西校区','中校区','东校区','东中西校区','高新区'],
-    select_value:'',
+    select_value:'西校区',
     food_icon:"../../images/campus_food.png",
     canteen_icon:"../../images/campus_canteen.png",
     fruit_icon:"../../images/campus_fruit.png",
