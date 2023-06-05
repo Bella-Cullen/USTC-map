@@ -128,6 +128,13 @@ Page({
     var text = this.data.inputvalue;
     var his=this.data.history;
     if(!his.includes(text))his.unshift(text);
+    else{
+      var tmp=his.indexOf(text);
+      for(var i=tmp;i>=1;i-=1){
+        his[i]=his[i-1];
+      }
+      his[0]=text;
+    }
     this.setData({
       history:his,
     })

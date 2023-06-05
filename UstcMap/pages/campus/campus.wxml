@@ -101,6 +101,14 @@
     <view class="sports_text" bindtap="sports">运动场</view>
     <view class="scenery_text" bindtap="scenery">风景</view>
     <view class="dormitory_text" bindtap="dormitory">寝室楼</view>
-    <view class="hospital_text" bindtap="hoapital">医院</view>
+    <view class="hospital_text" bindtap="hospital">医院</view>
+  </view>
+  <view class="other_content_image">
+    <image class="aed" src="{{aed_icon}}" bindtap="aed"></image>
+    <image class="others" src="{{others_icon}}" bindtap="others"></image>
+  </view>
+  <view class="other_content_text">
+    <view class="aed_text" bindtap="aed">AED</view>
+    <view class="others_text" bindtap="others">其它</view>
   </view>
 </view>

@@ -374,6 +374,18 @@
   margin-left: 75rpx;
   margin-top: 12rpx;
 }
+.aed{
+  width:95rpx;
+  height:95rpx;
+  margin-left: 60rpx;
+  margin-top: 8rpx;
+}
+.others{
+  width:70rpx;
+  height:70rpx;
+  margin-left: 75rpx;
+  margin-top: 16rpx;
+}
 .other_content_text{
   display: flex;
   flex-direction: row;
@@ -398,5 +410,15 @@
 .hospital_text{
   font-size: medium;
   margin-left:75rpx;
+  font-family: cursive;
+}
+.aed_text{
+  font-size: medium;
+  margin-left:85rpx;
+  font-family: cursive;
+}
+.others_text{
+  font-size: medium;
+  margin-left:100rpx;
   font-family: cursive;
 }
