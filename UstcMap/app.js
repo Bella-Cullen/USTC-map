@@ -100,7 +100,7 @@ App({
               doors:[],
               name:"外卖架",
               other_name:"",
-              img:[""],
+              img:["https://sbsk.gitee.io/image/photo/123.jpg"],
               page_link:"",
             },
             {
@@ -109,7 +109,7 @@ App({
               doors:[],
               name:"外卖架",
               other_name:"",
-              img:[""],
+              img:["https://sbsk.gitee.io/image/photo/46.jpg"],
               page_link:"",
             },
           ],
