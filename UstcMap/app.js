@@ -1124,6 +1124,7 @@ App({
 
           ],
           [//AED
+          // TODO:
           ],
         ],
         [//other
@@ -1508,6 +1509,7 @@ App({
             },
           ],
           [//AED
+          // TODO:
           ],
         ],
         [//other
@@ -1518,7 +1520,7 @@ App({
               doors:[],
               name:"专家楼",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1527,7 +1529,7 @@ App({
               doors:[],
               name:"东区派出所",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1536,7 +1538,7 @@ App({
               doors:[],
               name:"东区心理健康咨询",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1545,7 +1547,7 @@ App({
               doors:[],
               name:"教务处",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1554,7 +1556,7 @@ App({
               doors:[],
               name:"校园卡补办处",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1563,7 +1565,7 @@ App({
               doors:[],
               name:"东区USTC1958",
               other_name:"ustc1958",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1572,7 +1574,7 @@ App({
               doors:[],
               name:"水上报告厅",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1581,7 +1583,7 @@ App({
               doors:[],
               name:"东区大礼堂",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
           ],
@@ -1729,105 +1731,105 @@ App({
           latitude:31.840509,
           longtitude:117.260186,
           name:"无锡汤包",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839014,
           longtitude:117.260130,
           name:"杨国福麻辣烫",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839034,
           longtitude:117.260113,
           name:"吉祥馄饨",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839095,
           longtitude:117.260130,
           name:"老高烧烤",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839156,
           longtitude:117.260135,
           name:"老地方川菜馆",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839467,
           longtitude:117.260156,
           name:"么肆烤肉",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839885,
           longtitude:117.260161,
           name:"毛记冒菜",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839820,
           longtitude:117.260157,
           name:"尚螺螺狮粉",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.840008,
           longtitude:117.260150,
           name:"肥叔锅贴",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839982,
           longtitude:117.260153,
           name:"小高米线",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839911,
           longtitude:117.260158,
           name:"酷壳花甲",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.840811,
           longtitude:117.260092,
           name:"尼克斯汉堡",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.840891,
           longtitude:117.260079,
           name:"马店羊汤馆",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839229,
           longtitude:117.260133,
           name:"巴蜀人家",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.838880,
           longtitude:117.260093,
           name:"沙县小吃",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
@@ -1841,7 +1843,7 @@ App({
           latitude:31.838924,
           longtitude:117.260102,
           name:"兰州拉面",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -1853,7 +1855,7 @@ App({
           latitude:31.840049,
           longtitude:117.260226,
           name:"鲜丰",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -1862,7 +1864,7 @@ App({
           latitude:31.838942,
           longtitude:117.267331,
           name:"量子咖啡",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
@@ -1876,35 +1878,35 @@ App({
           latitude:31.840163,
           longtitude:117.260169,
           name:"蜜雪冰城",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839569,
           longtitude:117.260156,
           name:"来一杯",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839803,
           longtitude:117.260158,
           name:"c忆",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.840011,
           longtitude:117.260152,
           name:"沪上阿姨",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.840779,
           longtitude:117.260111,
           name:"巴莉甜甜",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -1934,7 +1936,7 @@ App({
           latitude:31.839635,
           longtitude:117.260157,
           name:"百分百超市",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
@@ -1948,21 +1950,21 @@ App({
           latitude:31.841038,
           longtitude:117.260077,
           name:"来伊份",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839421,
           longtitude:117.260219,
           name:"罗森",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839383,
           longtitude:117.260178,
           name:"桂太太生活超市",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -1992,7 +1994,7 @@ App({
           latitude:31.843316,
           longtitude:117.259739,
           name:"百姓缘大药房",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -2001,7 +2003,7 @@ App({
           latitude:31.840903,
           longtitude:117.260077,
           name:"指标发型会所",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -2019,7 +2021,7 @@ App({
           latitude:31.841361,
           longtitude:117.260416,
           name:"中国联通",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
@@ -2063,7 +2065,7 @@ App({
           latitude:31.839368,
           longtitude:117.260221,
           name:"菜鸟驿站",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -2072,7 +2074,7 @@ App({
           latitude:31.834208,
           longtitude:117.264648,
           name:"贝壳酒店",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
@@ -2100,14 +2102,14 @@ App({
           latitude:31.838977,
           longtitude:117.260114,
           name:"百富缘宾馆",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.833538,
           longtitude:117.264556,
           name:"一路同行精选酒店",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -2119,49 +2121,49 @@ App({
           latitude:31.841624,
           longtitude:117.256669,
           name:"还车点",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.841336,
           longtitude:117.256569,
           name:"还车点",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.841275,
           longtitude:117.259667,
           name:"还车点",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.841190,
           longtitude:117.260081,
           name:"还车点",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.840497,
           longtitude:117.267763,
           name:"还车点",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.841606,
           longtitude:117.256815,
           name:"还车点",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.837182,
           longtitude:117.265661,
           name:"还车点",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -2170,70 +2172,70 @@ App({
           latitude:31.833581,
           longtitude:117.265124,
           name:"机研所公交站",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.841474,
           longtitude:117.261663,
           name:"稻香村公交站",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.841638,
           longtitude:117.273107,
           name:"地铁站-中国科大东区",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.854538,
           longtitude:117.255585,
           name:"地铁站-三里庵",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.841389,
           longtitude:117.250157,
           name:"公交站",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839380,
           longtitude:117.251619,
           name:"公交站",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.841299,
           longtitude:117.253029,
           name:"公交站",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.798961,
           longtitude:117.290199,
           name:"高铁站-合肥南站",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.886239,
           longtitude:117.317274,
           name:"高铁站-合肥站",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.985274,
           longtitude:116.977942,
           name:"合肥新桥国际机场",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -2249,35 +2251,35 @@ App({
           latitude:31.844043,
           longtitude:117.260109,
           name:"安徽省胸科医院",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.839764,
           longtitude:117.260165,
           name:"合肥蜀山黄山路门诊部",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.850269,
           longtitude:117.265669,
           name:"安徽医科大学附属口腔医院",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.850205,
           longtitude:117.265933,
           name:"安医大第一附属医院",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.852529,
           longtitude:117.258978,
           name:"安徽省中医院",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -2286,14 +2288,14 @@ App({
           latitude:31.853287,
           longtitude:117.256390,
           name:"国购广场",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.853872,
           longtitude:117.257412,
           name:"之心城",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -2315,21 +2317,21 @@ App({
           latitude:31.842137,
           longtitude:117.259722,
           name:"精功眼镜",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.840405,
           longtitude:117.260085,
           name:"吴良材眼镜",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.832619,
           longtitude:117.266606,
           name:"中科眼镜",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
@@ -2338,14 +2340,14 @@ App({
           latitude:31.841309,
           longtitude:117.262544,
           name:"新大洲电动车",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
         {
           latitude:31.837050,
           longtitude:117.264038,
           name:"知行书店",
-          img:[""],
+          img:[""],// TODO:
           intro:"",
         },
       ],
