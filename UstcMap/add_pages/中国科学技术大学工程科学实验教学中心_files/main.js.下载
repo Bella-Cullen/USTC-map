@@ -1,0 +1,67 @@
+// 导航
+jQuery("#nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+
+//幻灯片
+
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+
+var swiper2 = new Swiper('.slider .swiper-container', {
+        autoplay:true,
+        loop: true,
+        simulateTouch:false,
+        pagination: {
+            el: '.slider .swiper-pagination',
+            clickable:true,
+            bulletActiveClass:'pag-active',
+            bulletClass:'pag',
+        },
+  navigation: {
+            nextEl: '.next',
+            prevEl: '.prev',
+        },
+        on: {
+            slideChangeTransitionStart: function(){
+              var _index = $("#swiper2 .swiper-slide-active").attr("data-swiper-slide-index");
+               $(".slider .text a").eq(_index).show().siblings().hide();
+            },
+        },
+    });
+
+$(window).scroll(function(){
+    var _top = $(document).scrollTop();
+    var _w = $(window).width();
+    if(_w > 1200) {
+        if(_top > 10) {
+            $(".navbar").addClass("navbar_fixed");
+        }else {
+            $(".navbar").removeClass("navbar_fixed");
+        }
+    }else {
+        if(_top > 10) {
+            $(".navbar").addClass("navbar_fixed");
+        }else {
+            $(".navbar").removeClass("navbar_fixed");
+
+        }
+    }
+
+})

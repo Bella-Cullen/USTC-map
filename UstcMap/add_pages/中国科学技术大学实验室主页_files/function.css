@@ -1,0 +1,62 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/*去掉下面一行注释,可使整个网站群页面变灰*/
+/*body{filter:gray}*/
+
+/*全局样式*/
+body,html{ height:100%;}
+body{background: #fff;}
+body,input,select,textarea{font-family:"Arial regular","Hiragino Sans GB",Helvetica; font-size:14px; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{ color:#2b2b2b;}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, s, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,  tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video,button{padding:0; margin:0; border:0; outline:0; background:transparent}
+article, aside, details, summary, figcaption, figure, footer, header, hgroup, menu, nav, section{ display:block}
+html{font-size:100%;}
+*{ -webkit-tap-highlight-color: transparent;}
+table,td,tr,th{font-size:12px;}
+li{list-style-type:none;list-style:none;}
+table{ margin:0 auto;border-spacing:0; border-collapse:collapse; }
+img{border:0;}
+i{ font-style:normal}
+ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:12px; font-weight:normal;}
+q:before,q:after {content:'';}   
+abbr,acronym {border:0;}
+address,caption,cite,code,dfn,em,th,var {font-weight:normal; font-style:normal;}   
+a {color:#2b2b2b;text-decoration:none;}
+a,button{ cursor: pointer;}
+label{ vertical-align:middle}
+div,a,li,span,input,dt{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}  /*Safari */
+input,textarea,select,a,button{ outline:none; border:0}
+
+
+
+.f18{ font-size:18px;}
+.f14{ font-size:14px;}
+.mb10{ margin-bottom:10px;}
+.fb{}
+
+.red{ color:#e75745}
+.orange{ color:#fda825;}
+.blue{color:#0680de}
+.gray{ color:#666}
+.fl{ float:left;}
+.fr{ float:right;}
+.pointer{cursor:pointer;}
+.textLeft{ text-align:left;}
+.textRight{ text-align:right;}
+.textCenter{ text-align:center}
+
+.orange-color{color:#f6ab1a}
+.border{border: 1px solid #dedede}
+
+
+
+.clearfix{zoom:1}
+.clearfix:after,.clearfix after{visibility:hidden; display:block; content:""; clear:both}
+.blank{ margin-top:50px;}
+.blank18{ margin-top:18px;}
+.tac{ text-align:center;}
+

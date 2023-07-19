@@ -1,0 +1,16 @@
+﻿document.write('<script src="js/jquery-1.12.3.min.js"></script>');
+document.write('<script src="js/bootstrap.min.js"></script>');
+document.write('<script src="js/jquery.nivoslider.js"></script>');
+document.write('<script src="js/nivoslider-active.js"></script>');
+document.write('<script src="js/owl.carousel.min.js"></script>');
+document.write('<script src="js/countdown.js"></script>');
+document.write('<script src="js/ajax-contact.js"></script>');
+document.write('<script src="js/meanmenu.js"></script>');
+document.write('<script src="js/jquery.magnific-popup.min.js"></script>');
+document.write('<script src="js/jquery.waypoints.min.js"></script>');
+document.write('<script src="js/counterup.min.js"></script>');
+document.write('<script src="js/jquery.scrollUp.js"></script>');
+document.write('<script src="js/wow.min.js"></script>');
+document.write('<script src="js/custom.js"></script>');
+document.write('<script src="js/jquery-3.3.1.min.js"></script>');
+document.write('<script src="js/video.js"></script>');

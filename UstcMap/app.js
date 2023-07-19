@@ -14,7 +14,7 @@ App({
               name:"芳华餐厅",
               other_name:"芳华食堂",
               img:["https://sbsk.gitee.io/image/photo/59.jpg"],
-              page_link:"",
+              page_link:"https://ysjt.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.840690,
@@ -34,7 +34,7 @@ App({
               name:"西区学生食堂",
               other_name:"西区学生餐厅",
               img:["https://sbsk.gitee.io/image/westimage/westcanteen.jpg"],
-              page_link:["https://sd.qunliao.info/fastdfs4/M00/C8/FF/ChNLklybTdGAZ1ZbAAAat5i0MFQ461.jpg"],// TODO:
+              page_link:["https://ysjt.ustc.edu.cn/main.htm"],
             },
             {
               latitude:31.840690,
@@ -43,7 +43,7 @@ App({
               name:"正阳楼",
               other_name:"食堂",
               img:["https://sbsk.gitee.io/image/photo/59.jpg"],// TODO: 
-              page_link:"",
+              page_link:"https://ysjt.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.840485,
@@ -52,7 +52,7 @@ App({
               name:"金桔餐厅",
               other_name:"金桔食堂",
               img:["https://sbsk.gitee.io/image/photo/59.jpg"],// TODO:
-              page_link:"",
+              page_link:"https://ysjt.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.838380,
@@ -61,7 +61,7 @@ App({
               name:"西区教工食堂",
               other_name:"西区教工餐厅",
               img:["https://sbsk.gitee.io/image/photo/114.jpg"],
-              page_link:"",
+              page_link:"https://ysjt.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.837218,
@@ -70,7 +70,7 @@ App({
               name:"西苑食堂",
               other_name:"西苑餐厅",
               img:["https://sbsk.gitee.io/image/photo/58.jpg"],
-              page_link:"",
+              page_link:"https://ysjt.ustc.edu.cn/main.htm",
             },
           ],
           [//fruit
@@ -123,7 +123,7 @@ App({
               name:"三教A楼",
               other_name:"3A",
               img:["https://sbsk.gitee.io/image/photo/37.jpg"],
-              page_link:"",
+              page_link:"https://catalog.ustc.edu.cn/query/classroom",
             },
             {
               latitude:31.838246,
@@ -132,7 +132,7 @@ App({
               name:"三教B楼",
               other_name:"3B",
               img:["https://sbsk.gitee.io/image/photo/38.jpg"],
-              page_link:"",
+              page_link:"https://catalog.ustc.edu.cn/query/classroom",
             },
             {
               latitude:31.838028,
@@ -141,7 +141,7 @@ App({
               name:"三教C楼",
               other_name:"3C",
               img:["https://sbsk.gitee.io/image/photo/36.jpg"],
-              page_link:"",
+              page_link:"https://catalog.ustc.edu.cn/query/classroom",
             },
           ],
           [//library
@@ -1186,8 +1186,8 @@ App({
               doors:[],
               name:"东苑餐厅",
               other_name:"东苑食堂",
-              img:[""],
-              page_link:"",
+              img:["add_figs/东苑.jpg"],
+              page_link:"https://ysjt.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.837156,
@@ -1195,17 +1195,17 @@ App({
               doors:[],
               name:"星座餐厅（清真）",
               other_name:"星座食堂",
-              img:[""],
-              page_link:"",
+              img:["add_figs/星座.jpg"],
+              page_link:"https://ysjt.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.836606,
               longtitude:117.270710,
               doors:[],
               name:"美食广场",
-              other_name:"食堂",
-              img:[""],
-              page_link:"",
+              other_name:"美广",
+              img:["add_figs/美广.jpg"],
+              page_link:"https://ysjt.ustc.edu.cn/main.htm",
             },
           ],
           [//fruit
@@ -1215,7 +1215,7 @@ App({
               doors:[],
               name:"水果店",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
 
@@ -1231,27 +1231,27 @@ App({
               longtitude:117.269105,
               doors:[],
               name:"第一教学楼",
-              other_name:"",
-              img:[""],
-              page_link:"",
+              other_name:"一教",
+              img:["add_figs/一教.jpg"],
+              page_link:"https://catalog.ustc.edu.cn/query/classroom",
             },
             {
               latitude:31.840791,
               longtitude:117.270870,
               doors:[],
               name:"第五教学楼",
-              other_name:"",
-              img:[""],
-              page_link:"",
+              other_name:"五教",
+              img:["add_figs/五教.jpg"],
+              page_link:"https://catalog.ustc.edu.cn/query/classroom",
             },
             {
               latitude:31.837970,
               longtitude:117.270529,
               doors:[],
               name:"第二教学楼",
-              other_name:"",
-              img:[""],
-              page_link:"",
+              other_name:"二教",
+              img:["add_figs/二教.jpg"], // TODO:
+              page_link:"https://catalog.ustc.edu.cn/query/classroom",
             },
           ],
           [//library
@@ -1260,9 +1260,9 @@ App({
               longtitude:117.269277,
               doors:[],
               name:"东区图书馆",
-              other_name:"",
-              img:[""],
-              page_link:"",
+              other_name:"东图",
+              img:["add_figs/东图.jpg"],
+              page_link:"https://lib.ustc.edu.cn/",
             },
 
           ],
@@ -1272,8 +1272,8 @@ App({
               longtitude:117.269404,
               doors:[],
               name:"理化大楼",
-              other_name:"",
-              img:[""],
+              other_name:"基础科学教学实验中心",
+              img:["add_figs/理化大楼.jpg"],
               page_link:"",
             },
             {
@@ -1281,18 +1281,18 @@ App({
               longtitude:117.270761,
               doors:[],
               name:"地空学院",
-              other_name:"",
-              img:[""],
-              page_link:"",
+              other_name:"地空",
+              img:["add_figs/地空.jpg"], // TODO:
+              page_link:"http://ess.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.841212,
               longtitude:117.271839,
               doors:[],
               name:"数学科学学院",
-              other_name:"",
-              img:[""],
-              page_link:"",
+              other_name:"数院",
+              img:["add_figs/管科楼.jpg"], // TODO:
+              page_link:"https://math.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.840877,
@@ -1300,17 +1300,17 @@ App({
               doors:[],
               name:"国家高性能计算中心",
               other_name:"",
-              img:[""],
-              page_link:"",
+              img:["add_figs/高性能.jpg"],
+              page_link:"http://cs.ustc.edu.cn/2020/0905/c22639a448575/page.htm",
             },
             {
               latitude:31.838027,
               longtitude:117.270078,
               doors:[],
               name:"少年班学院",
-              other_name:"",
-              img:[""],
-              page_link:"",
+              other_name:"少院",
+              img:["add_figs/人上人.jpg"],
+              page_link:"https://sgy.ustc.edu.cn/",
             },
             {
               latitude:31.833541,
@@ -1318,8 +1318,8 @@ App({
               doors:[],
               name:"近代物理楼",
               other_name:"",
-              img:[""],
-              page_link:"",
+              img:["add_figs/近代物理楼.jpg"],
+              page_link:"https://mphy.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.833764,
@@ -1327,7 +1327,7 @@ App({
               doors:[],
               name:"分子量子调控研究室",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
           ],
@@ -1372,7 +1372,7 @@ App({
               doors:[],
               name:"东区西门",
               other_name:"",
-              img:[""],
+              img:["add_figs/东西.jpg"],
               page_link:"",
             },
             {
@@ -1381,7 +1381,7 @@ App({
               doors:[],
               name:"东区南门",
               other_name:"",
-              img:[""],
+              img:["add_figs/东南.jpg"],
               page_link:"",
             },
           ],
@@ -1404,7 +1404,7 @@ App({
               doors:[],
               name:"校车站",
               other_name:"",
-              img:[""],
+              img:["add_figs/东校.png"], // TODO:
               page_link:"",
             },
           ],
@@ -1417,7 +1417,7 @@ App({
               doors:[],
               name:"东区操场",
               other_name:"",
-              img:[""],
+              img:["add_figs/东操.png"], // TODO:
               page_link:"",
             },
             {
@@ -1426,7 +1426,7 @@ App({
               doors:[],
               name:"篮球场",
               other_name:"",
-              img:[""],
+              img:["add_figs/东篮.png"],
               page_link:"",
             },
 
@@ -1440,8 +1440,8 @@ App({
               doors:[],
               name:"校史馆",
               other_name:"",
-              img:[""],
-              page_link:"",
+              img:["add_figs/校史馆.jpg"],
+              page_link:"http://arch.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.838212,
@@ -1449,7 +1449,7 @@ App({
               doors:[],
               name:"郭沫若广场",
               other_name:"",
-              img:[""],
+              img:["add_figs/郭广.jpg"],
               page_link:"",
             },
 
@@ -1463,7 +1463,7 @@ App({
               doors:[],
               name:"学生公寓320楼",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1472,7 +1472,7 @@ App({
               doors:[],
               name:"学生公寓321楼",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1481,7 +1481,7 @@ App({
               doors:[],
               name:"学生公寓322楼",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -1490,7 +1490,7 @@ App({
               doors:[],
               name:"学生公寓323楼",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
           ],
@@ -1503,8 +1503,8 @@ App({
               doors:[],
               name:"东区校医院",
               other_name:"",
-              img:[""],
-              page_link:"",
+              img:["add_figs/东区校医院.jpg"],
+              page_link:"http://hospital.ustc.edu.cn/",
             },
           ],
           [//AED
@@ -1570,7 +1570,7 @@ App({
               latitude:31.838398,
               longtitude:117.270159,
               doors:[],
-              name:"正阳楼水上报告厅",
+              name:"水上报告厅",
               other_name:"",
               img:[""],
               page_link:"",

@@ -1,0 +1,107 @@
+$(document).ready(function($) {
+    // 导航
+    $(".ul-nav li").mouseenter(function() {
+        if ($(this).find("dl").hasClass("t-level")) {
+            $(".header .bg").css("height", "50px")
+        } else {
+            $(".header .bg").css("height", "0")
+        }
+        $(this).find("dl").stop().fadeIn()
+    })
+    $(".ul-nav li").mouseleave(function() {
+        $(".header .bg").css("height", "0");
+        $(this).find("dl").stop().hide()
+    })
+    // 弹出框
+    $('.myfancy').click(function() {
+        var _id = $(this).attr('href');
+        $(_id).find(".pop-bg").stop().fadeIn();
+        $(_id).stop().fadeIn();
+    });
+    $('.pop-bg,.close').click(function() {
+        $(this).parents('.m-pop').stop().fadeOut();
+        $(".pop-bg").stop().fadeOut();
+    });
+    // 选项卡 鼠标点击切换
+    $(".TAB_CLICK li").click(function() {
+        var tab = $(this).parent(".TAB_CLICK");
+        var con = tab.attr("id");
+        var on = tab.find("li").index(this);
+        $(this).addClass('on').siblings(tab.find("li")).removeClass('on');
+        $(con).eq(on).show().siblings(con).hide();
+    });
+    // 选项卡 鼠标经过切换
+    $(".TAB li").mousemove(function() {
+        var tab = $(this).parent(".TAB");
+        var con = tab.attr("id");
+        var on = tab.find("li").index(this);
+        $(this).addClass('hover').siblings(tab.find("li")).removeClass('hover');
+        $(con).eq(on).show().siblings(con).hide();
+    });
+    //返回顶部
+    $('.goTop').click(function() {
+        $('body,html').animate({
+            'scrollTop': 0
+        }, 500);
+    });
+    $(window).scroll(function() {
+        var _top = $(window).scrollTop();
+        if (_top < 100) {
+            $('.goTop').stop().fadeOut(500);
+        } else {
+            $('.goTop').stop().fadeIn(500);
+        }
+    });
+    (function() {
+        // 自定义多选
+        $('[role=checkbox]').each(function() {
+            var input = $(this).find('input[type="checkbox"]');
+
+            input.each(function() {
+                if ($(this).attr('checked')) {
+                    $(this).parents('label').addClass('checked');
+                    $(this).prop("checked", true)
+                }
+            })
+
+            input.change(function() {
+                $(this).parents('label').toggleClass('checked');
+            });
+        })
+
+    })();
+    
+
+    (function() {
+        // 自定义单选
+        $('[role=radio]').each(function() {
+            var input = $(this).find('input[type="radio"]'),
+                label = $(this).find('label');
+
+            input.each(function() {
+                if ($(this).attr('checked')) {
+                    $(this).parents('label').addClass('checked');
+                    $(this).prop("checked", true)
+                }
+            })
+
+            input.change(function() {
+                label.removeClass('checked');
+                $(this).parents('label').addClass('checked');
+                input.removeAttr('checked');
+                $(this).prop("checked", true)
+            })
+        })
+    })();
+    (function () {
+        // 点击查看大图
+        // $('.m-artical img').on('click',function(){
+        //     var src = $(this).attr('src');
+        //     $('.m-pic-pop').find('img').attr('src',src);
+        //     $('.m-pic-pop').fadeIn(200);
+        // })
+        // $('.m-pic-pop .a-close').on('click',function(){
+        //     $('.m-pic-pop').fadeOut(100);
+        // })
+    })();
+});

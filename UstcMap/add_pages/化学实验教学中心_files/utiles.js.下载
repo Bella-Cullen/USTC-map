@@ -1,0 +1,200 @@
+function Nav_stauts() {
+   if($(".memu-btn").hasClass('memu-btn-active')){
+          $(".memu-btn").removeClass('memu-btn-active');
+          $(".nav ul").removeClass("navshow");
+          $(".warp3").fadeOut(300);
+    }else {
+       $(".memu-btn").addClass('memu-btn-active');
+        $(".nav ul").addClass("navshow");
+        $(".warp3").fadeIn(300);
+    
+    }
+}
+
+$(".memu-btn").click(function(){
+   Nav_stauts();
+})
+
+
+
+$("#close").click(function(){
+  
+    $(this).parent().fadeOut(300);
+    $(".warp .search").addClass("search_show");
+    $(".header").css('transform','translateX(0)');
+    $("body").css("overflow-y","auto");
+
+})
+
+
+
+
+
+
+
+
+var isbtn = true;
+
+$(".links").click(function(){
+    $(this).children(".friends").stop().slideToggle();
+    if(isbtn) {
+        $(this).children("i").css("transform","rotate(180deg)");
+        isbtn = false;
+    }else {
+        $(this).children("i").css("transform","rotate(0deg)");
+       
+        isbtn = true;
+    }
+})
+
+
+$(".isearch").click(function(){
+     if($(".memu-btn").hasClass('memu-btn-active')) {
+        Nav_stauts();
+}
+    
+    $(".warp .search").addClass("search_show");
+    $(".warp").fadeIn();
+    $("body").css("overflow-y","hidden")
+})
+
+$(window).scroll(function(){
+    var _top = $(document).scrollTop();
+    var _w = $(window).width();
+    if(_w > 1200) {
+        if(_top > 10) {    
+            $(".nav").addClass("header_fixed");
+        }else {
+            $(".nav").removeClass("header_fixed");
+        }
+    }else {
+        if(_top > 10) {    
+            $(".headerbg").addClass("header_fixed");
+        }else {
+            $(".headerbg").removeClass("header_fixed");
+          
+        }
+    }
+
+})
+
+
+if(typeof $ != "undefined") {
+	$(function() {
+		var width = $(window).width();
+		var win = $(window);
+		var isIE = !!window.ActiveXObject;
+		var isIE6 = isIE && !window.XMLHttpRequest;
+		var isIE8 = isIE && !!document.documentMode;
+		var isIE7 = isIE && !isIE6 && !isIE8;
+
+		// ftool
+		(function() {
+			var ftool = $("#ftool"),
+				ftoolTop = $("#ftoolTop");
+			ftoolTop.click(function(e) {
+				e.preventDefault();
+				$("html,body").animate({
+					scrollTop: 0
+				}, 500);
+			});
+			$(window).on("DOMContentLoaded scroll resize", function() {
+				$(this).scrollTop() == 0 ? ftoolTop.stop(true, true).fadeOut() : ftoolTop.fadeIn();
+				$(this).scrollTop() < 320 ? ftool.stop(true, true).fadeOut() : ftool.fadeIn();
+			});
+			// ie6
+			if(isIE6) {
+				$(window).scroll(function() {
+					$("#ftool").css({
+						"top": $(this).scrollTop() + 200
+					});
+				});
+			};
+		})();
+		// end ftool
+
+	});
+
+};
+
+$("#machine-close").click(function(){
+    $("warp2").fadeOut(300);
+})
+
+
+if(window.screen.width>1200) {
+    $(".nav ul li").hover(function(){
+        $(this).find(".navbox").stop().slideDown();
+    },function(){
+        $(this).find(".navbox").stop().slideUp();
+    })
+} else {
+    $(".nav ul li").click(function(){
+        $(this).find(".navbox").stop().slideToggle();
+        if($(this).hasClass("tran-li") == true) {
+            $(this).removeClass("tran-li");
+        }else {
+            $(this).addClass("tran-li");
+        } 
+    })
+
+$(".subnav-nav").click(function(){
+    $(this).parent().find(".subnnav-item").stop().slideToggle(300);
+    if($(this).find(".arr").hasClass("arr-active") == true){
+        $(this).find(".arr").removeClass("arr-active");
+    }else {
+        $(this).find(".arr").addClass("arr-active");
+    }
+})
+
+$(".listleft>p").click(function(){
+    $(this).parent().find(".subnav").stop().slideToggle(300);
+    if($(this).find(".arr").hasClass("arr-active") == true){
+        $(this).find(".arr").removeClass("arr-active");
+    }else {
+        $(this).find(".arr").addClass("arr-active");
+    }
+})
+
+}
+
+window.onresize = init;
+window.onload   = init;
+function init(){
+
+if($(".wp_entry").find("table").length === 0) {
+  if($(".bor-t").html() != "竞赛获奖") {
+     $(".listright").attr("style","padding:0 40px 40px;")
+  }
+}else{
+   if($(".bor-t").html() == "师资队伍") {
+     $(".listright").attr("style","padding:0 40px 40px;")
+   }
+}
+
+var _top = $(document).scrollTop();
+if(window.screen.width>1200) {
+
+if(_top > 10) {
+
+$(".nav").addClass("header_fixed");
+}
+
+$(".headerbg").removeClass("header_fixed");
+$(".subnav").show();
+
+}else {
+$(".nav").removeClass("header_fixed");
+}
+
+$("video").attr("controlsList","nodownload");
+$("video").attr("oncontextmenu","return false;");
+}
+
+
+init();
+
+ $(".subnav3").scrollLeft($(".subnav3 .selected").position().left-25);
+
+
+
