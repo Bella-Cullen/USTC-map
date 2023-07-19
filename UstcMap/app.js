@@ -34,7 +34,7 @@ App({
               name:"西区学生食堂",
               other_name:"西区学生餐厅",
               img:["https://sbsk.gitee.io/image/westimage/westcanteen.jpg"],
-              page_link:["https://sd.qunliao.info/fastdfs4/M00/C8/FF/ChNLklybTdGAZ1ZbAAAat5i0MFQ461.jpg"],
+              page_link:["https://sd.qunliao.info/fastdfs4/M00/C8/FF/ChNLklybTdGAZ1ZbAAAat5i0MFQ461.jpg"],// TODO:
             },
             {
               latitude:31.840690,
@@ -42,7 +42,7 @@ App({
               doors:[],
               name:"正阳楼",
               other_name:"食堂",
-              img:["https://sbsk.gitee.io/image/photo/59.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/59.jpg"],// TODO: 
               page_link:"",
             },
             {
@@ -51,7 +51,7 @@ App({
               doors:[],
               name:"金桔餐厅",
               other_name:"金桔食堂",
-              img:["https://sbsk.gitee.io/image/photo/59.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/59.jpg"],// TODO:
               page_link:"",
             },
             {
@@ -79,8 +79,8 @@ App({
               longtitude:117.254530,
               doors:[],
               name:"水果",
-              other_name:"",
-              img:[""],
+              other_name:"水果摊",
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -88,8 +88,8 @@ App({
               longtitude:117.259575,
               doors:[],
               name:"水果",
-              other_name:"",
-              img:[""],
+              other_name:"水果摊",
+              img:[""],// TODO:
               page_link:"",
             },
           ],
@@ -99,7 +99,7 @@ App({
               longtitude:117.257026,
               doors:[],
               name:"外卖架",
-              other_name:"",
+              other_name:"外卖柜",
               img:["https://sbsk.gitee.io/image/photo/123.jpg"],
               page_link:"",
             },
@@ -108,7 +108,7 @@ App({
               longtitude:117.259606,
               doors:[],
               name:"外卖架",
-              other_name:"",
+              other_name:"外卖柜",
               img:["https://sbsk.gitee.io/image/photo/46.jpg"],
               page_link:"",
             },
@@ -121,7 +121,7 @@ App({
               longtitude:117.255318,
               doors:[],
               name:"三教A楼",
-              other_name:"",
+              other_name:"3A",
               img:["https://sbsk.gitee.io/image/photo/37.jpg"],
               page_link:"",
             },
@@ -130,7 +130,7 @@ App({
               longtitude:117.255026,
               doors:[],
               name:"三教B楼",
-              other_name:"",
+              other_name:"3B",
               img:["https://sbsk.gitee.io/image/photo/38.jpg"],
               page_link:"",
             },
@@ -139,7 +139,7 @@ App({
               longtitude:117.254451,
               doors:[],
               name:"三教C楼",
-              other_name:"",
+              other_name:"3C",
               img:["https://sbsk.gitee.io/image/photo/36.jpg"],
               page_link:"",
             },
@@ -150,9 +150,9 @@ App({
               longtitude:117.257344,
               doors:[],
               name:"西区图书馆",
-              other_name:"",
+              other_name:"西图",
               img:["https://sbsk.gitee.io/image/photo/40.jpg"],
-              page_link:"",
+              page_link:"https://lib.ustc.edu.cn/",
             },
           ],
           [//lab_building
@@ -160,10 +160,10 @@ App({
               latitude:31.837496,
               longtitude:117.255969,
               doors:[],
-              name:"电一楼",
-              other_name:"",
+              name:"信息与计算机实验教学中心",
+              other_name:"电四楼",
               img:["https://sbsk.gitee.io/image/photo/35.jpg"],
-              page_link:"",
+              page_link:"https://etcis-web.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.838707,
@@ -172,7 +172,7 @@ App({
               name:"微纳研究与制造中心",
               other_name:"",
               img:["https://sbsk.gitee.io/image/westimage/westweina.jpg"],
-              page_link:"",
+              page_link:"http://nano.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.839766,
@@ -181,14 +181,14 @@ App({
               name:"创新创业学院",
               other_name:"",
               img:["https://sbsk.gitee.io/image/westimage/westnew.jpg"],
-              page_link:"",
+              page_link:"https://sie.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.838238,
               longtitude:117.252972,
               doors:[],
               name:"KTX实验室",
-              other_name:"ktx",
+              other_name:"KTX",
               img:["https://sbsk.gitee.io/image/westimage/westktx.jpg"],
               page_link:"",
             },
@@ -199,15 +199,15 @@ App({
               name:"力五楼",
               other_name:"",
               img:["https://sbsk.gitee.io/image/westimage/westli5.jpg"],
-              page_link:"",
+              page_link:"https://ses.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.837672,
               longtitude:117.254896,
               doors:[],
-              name:"电四楼",
+              name:"电一楼",
               other_name:"",
-              img:[""],
+              img:["https://sbsk.gitee.io/image/photo/34.jpg"],
               page_link:"",
             },         
             {
@@ -223,9 +223,9 @@ App({
               latitude:31.837502,
               longtitude:117.256792,
               doors:[],
-              name:"电二楼",
+              name:"电二楼", // TODO: 几个电楼相对位置参考https://map.ustc.edu.cn/
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/34.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/33.jpg"],
               page_link:"",
             },
             {
@@ -242,9 +242,9 @@ App({
               longtitude:117.253608,
               doors:[],
               name:"火灾实验室",
-              other_name:"",
+              other_name:"火灾科学国家重点实验室",
               img:["https://sbsk.gitee.io/image/westimage/westfirelab.jpg"],
-              page_link:"",
+              page_link:"http://sklfs.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.838222,
@@ -252,8 +252,8 @@ App({
               doors:[],
               name:"力一楼",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/31.jpg"],
-              page_link:"",
+              img:["https://sbsk.gitee.io/image/photo/31.jpg"],// TODO:
+              page_link:"https://ses.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.837988,
@@ -262,7 +262,7 @@ App({
               name:"力二楼",
               other_name:"",
               img:["https://sbsk.gitee.io/image/photo/30.jpg"],
-              page_link:"",
+              page_link:"https://ses.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.837465,
@@ -271,7 +271,7 @@ App({
               name:"力四楼",
               other_name:"",
               img:["https://sbsk.gitee.io/image/westimage/westli4.jpg"],
-              page_link:"",
+              page_link:"https://ses.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.838397,
@@ -280,14 +280,14 @@ App({
               name:"力三楼",
               other_name:"",
               img:["https://sbsk.gitee.io/image/photo/41.jpg"],
-              page_link:"",
+              page_link:"https://ses.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.840662,
               longtitude:117.258749,
               doors:[],
               name:"信智学部",
-              other_name:"",
+              other_name:"信息与智能学部",
               img:["https://sbsk.gitee.io/image/photo/120.jpg"],
               page_link:"",
             },
@@ -296,9 +296,9 @@ App({
               longtitude:117.258949,
               doors:[],
               name:"生命科学大楼",
-              other_name:"",
+              other_name:"生科楼",
               img:["https://sbsk.gitee.io/image/photo/119.jpg"],
-              page_link:"",
+              page_link:"https://biox.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.836686,
@@ -307,7 +307,7 @@ App({
               name:"同步辐射实验室",
               other_name:"核科学技术学院",
               img:["https://sbsk.gitee.io/image/photo/99.jpg"],
-              page_link:"",
+              page_link:"http://www.snst.ustc.edu.cn/main.htm",
             },
           ],
         ],
@@ -337,7 +337,7 @@ App({
               latitude:31.837939,
               longtitude:117.259445,
               doors:[],
-              name:"小木屋",
+              name:"近邻宝",
               other_name:"快递",
               img:["https://sbsk.gitee.io/image/photo/55.jpg"],
               page_link:"",
@@ -348,7 +348,7 @@ App({
               doors:[],
               name:"快递柜",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -366,7 +366,7 @@ App({
               doors:[],
               name:"快递柜",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -375,7 +375,7 @@ App({
               doors:[],
               name:"快递柜",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
           ],
@@ -386,7 +386,7 @@ App({
               doors:[],
               name:"超市",
               other_name:"小店",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -404,7 +404,7 @@ App({
               doors:[],
               name:"超市",
               other_name:"小店",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -413,7 +413,7 @@ App({
               doors:[],
               name:"超市",
               other_name:"小店",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -422,7 +422,7 @@ App({
               doors:[],
               name:"超市",
               other_name:"小店",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
           ],
@@ -433,7 +433,7 @@ App({
               doors:[],
               name:"文印",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -442,7 +442,7 @@ App({
               doors:[],
               name:"文印",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
           ],
@@ -455,7 +455,7 @@ App({
               doors:[],
               name:"西区北门",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/122.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/122.jpg"], // TODO:
               page_link:"",
             },
             {
@@ -464,7 +464,7 @@ App({
               doors:[],
               name:"西区东门",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/45.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/45.jpg"], // TODO:
               page_link:"",
             },
           ],
@@ -475,7 +475,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -484,7 +484,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -493,7 +493,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -502,7 +502,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -511,7 +511,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -520,7 +520,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -529,7 +529,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -538,7 +538,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -547,7 +547,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -556,7 +556,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -565,7 +565,7 @@ App({
               doors:[],
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
           ],
@@ -607,7 +607,7 @@ App({
               doors:[],
               name:"西区乒乓球馆",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/westimage/westpingpong.jpg"],
+              img:["https://sbsk.gitee.io/image/westimage/westpingpong.jpg"], // TODO:
               page_link:"",
             },
             {
@@ -616,7 +616,7 @@ App({
               doors:[],
               name:"气膜馆",
               other_name:"羽毛球馆",
-              img:["https://sbsk.gitee.io/image/photo/101.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/101.jpg"], // TODO:
               page_link:"",
             },
           ],
@@ -629,7 +629,7 @@ App({
               doors:[],
               name:"西区全民健身区",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/97.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/97.jpg"], // TODO:
               page_link:"",
             },
             {
@@ -638,16 +638,16 @@ App({
               doors:[],
               name:"严济慈广场",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/121.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/121.jpg"], // TODO:
               page_link:"",
             },
             {
               latitude:31.840314,
               longtitude:117.258388,
               doors:[],
-              name:"某个湖",
+              name:"芦花映雪", // TODO:
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -669,7 +669,7 @@ App({
               doors:[],
               name:"学生公寓1号楼",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/westimage/westdorm1.jpg"],
+              img:["https://sbsk.gitee.io/image/westimage/westdorm1.jpg"], // TODO:
               page_link:"",
             },
             {
@@ -678,7 +678,7 @@ App({
               doors:[],
               name:"学生公寓2号楼",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/westimage/westdorm2.jpg"],
+              img:["https://sbsk.gitee.io/image/westimage/westdorm2.jpg"], // TODO:
               page_link:"",
             },
             {
@@ -687,7 +687,7 @@ App({
               doors:[],
               name:"学生公寓6号楼",
               other_name:"",
-              img:[""],
+              img:[""], // TODO:
               page_link:"",
             },
             {
@@ -714,7 +714,7 @@ App({
               doors:[],
               name:"西区1幢宿舍",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -723,7 +723,7 @@ App({
               doors:[],
               name:"西区2幢宿舍",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -732,7 +732,7 @@ App({
               doors:[],
               name:"西区3幢宿舍",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -741,7 +741,7 @@ App({
               doors:[],
               name:"西区4幢宿舍",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -750,7 +750,7 @@ App({
               doors:[],
               name:"西区5幢宿舍",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -768,7 +768,7 @@ App({
               doors:[],
               name:"学生公寓10号楼",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -777,7 +777,7 @@ App({
               doors:[],
               name:"学生公寓9号楼",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -786,7 +786,7 @@ App({
               doors:[],
               name:"学生公寓8号楼",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
             {
@@ -795,7 +795,7 @@ App({
               doors:[],
               name:"学生公寓7号楼",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               page_link:"",
             },
           ],
@@ -809,11 +809,11 @@ App({
               name:"西区医院",
               other_name:"",
               img:["https://sbsk.gitee.io/image/westimage/westhospital.jpg"],
-              page_link:"",
+              page_link:"http://hospital.ustc.edu.cn/",
             },
           ],
           [//AED
-
+              // TODO:
           ],
         ],
         [//other
@@ -869,9 +869,9 @@ App({
               latitude:31.841453,
               longtitude:117.264015,
               name:"外卖架",
-              img:["https://sbsk.gitee.io/image/photo/10.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/10.jpg"], // TODO:
               doors:[],
-              other_name:"",
+              other_name:"外卖柜",
               page_link:"",
             },
           ],
@@ -888,10 +888,10 @@ App({
               latitude:31.839517,
               longtitude:117.261992,
               name:"科大医学楼",
-              img:["https://sbsk.gitee.io/image/photo/20.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/20.jpg"],// TODO:
               doors:[],
-              other_name:"",
-              page_link:"",
+              other_name:"医学楼",
+              page_link:"http://biomed.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.839195,
@@ -900,7 +900,7 @@ App({
               img:["https://sbsk.gitee.io/image/photo/21.jpg"],
               doors:[],
               other_name:"",
-              page_link:"",
+              page_link:"http://pic.ustc.edu.cn/main.htm",
             },
             {
               latitude:31.838816,
@@ -909,7 +909,7 @@ App({
               img:["https://sbsk.gitee.io/image/photo/26.jpg"],
               doors:[],
               other_name:"",
-              page_link:"",
+              page_link:"http://applchem.ustc.edu.cn/main.htm",
             },
           ],
         ],
@@ -948,8 +948,8 @@ App({
               latitude:31.839666,
               longtitude:117.264430,
               name:"快递柜",
-              other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/3.jpg"],
+              other_name:"快递",
+              img:["https://sbsk.gitee.io/image/photo/3.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -958,7 +958,7 @@ App({
               longtitude:117.264438,
               name:"近邻宝",
               other_name:"快递",
-              img:["https://sbsk.gitee.io/image/photo/2.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/2.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -968,7 +968,7 @@ App({
               latitude:31.838518,
               longtitude:117.260957,
               name:"科大糕点",
-              img:["https://sbsk.gitee.io/image/photo/24.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/24.jpg"],// TODO:
               doors:[],
               other_name:"",
               page_link:"",
@@ -985,7 +985,7 @@ App({
               latitude:31.841440,
               longtitude:117.264019,
               name:"中区北门",
-              img:["https://sbsk.gitee.io/image/photo/9.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/9.jpg"],// TODO:
               doors:[],
               other_name:"",
               page_link:"",
@@ -996,7 +996,7 @@ App({
               doors:[],
               name:"中区西门",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/27.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/27.jpg"],// TODO:
               page_link:"",
             },
 
@@ -1007,7 +1007,7 @@ App({
               longtitude:117.264183,
               name:"共享单车停放点",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1023,7 +1023,7 @@ App({
               longtitude:117.264309,
               name:"悦动空间",
               other_name:"中区健身房",
-              img:["https://sbsk.gitee.io/image/photo/6.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/6.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1032,7 +1032,7 @@ App({
               longtitude:117.263663,
               name:"乒乓球台",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/12.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/12.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1041,7 +1041,7 @@ App({
               longtitude:117.263274,
               name:"中区体育馆",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1050,7 +1050,7 @@ App({
               longtitude:117.263974,
               name:"游泳馆",
               other_name:"",
-              img:[""],
+              img:[""],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1059,7 +1059,7 @@ App({
               longtitude:117.262567,
               name:"手球场",
               other_name:"中区足球场",
-              img:["https://sbsk.gitee.io/image/photo/15.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/15.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1067,7 +1067,7 @@ App({
               latitude:31.838527,
               longtitude:117.262614,
               name:"夜光篮球场",
-              img:["https://sbsk.gitee.io/image/photo/16.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/16.jpg"],// TODO:
               doors:[],
               other_name:"",
               page_link:"",
@@ -1086,7 +1086,7 @@ App({
               longtitude:117.262948,
               name:"中区学生公寓3号楼",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/59.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/59.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1095,7 +1095,7 @@ App({
               longtitude:117.263773,
               name:"中区学生公寓2、4号楼",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/8.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/8.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1104,7 +1104,7 @@ App({
               longtitude:117.264145,
               name:"中区学生公寓5、6号楼",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/11.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/11.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1113,7 +1113,7 @@ App({
               longtitude:117.264171,
               name:"中区学生公寓1号楼",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/7.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/7.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1133,7 +1133,7 @@ App({
               longtitude:117.264576,
               name:"警务站",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/124.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/124.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1142,7 +1142,7 @@ App({
               longtitude:117.264444,
               name:"青年之家",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/1.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/1.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
@@ -1150,7 +1150,7 @@ App({
               latitude:31.840074,
               longtitude:117.264514,
               name:"中区教材书库",
-              other_name:"",
+              other_name:"书库",
               img:["https://sbsk.gitee.io/image/photo/3.jpg"],
               doors:[],
               page_link:"",
@@ -1160,7 +1160,7 @@ App({
               longtitude:117.264358,
               name:"中区心理健康咨询",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/5.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/5.jpg"], // TODO:
               doors:[],
               page_link:"",
             },
@@ -1169,7 +1169,7 @@ App({
               longtitude:117.260731,
               name:"艺术教学中心",
               other_name:"",
-              img:["https://sbsk.gitee.io/image/photo/25.jpg"],
+              img:["https://sbsk.gitee.io/image/photo/25.jpg"],// TODO:
               doors:[],
               page_link:"",
             },
