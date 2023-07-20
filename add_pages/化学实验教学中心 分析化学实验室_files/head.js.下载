@@ -1,6 +1,0 @@
-﻿document.write('<meta charset="UTF-8">');
-document.write('<meta name="description" content="">');
-document.write('<meta http-equiv="X-UA-Compatible" content="IE=edge">');
-document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
-document.write('<title>化学实验教学中心 分析化学实验室</title>');
-document.write('<link rel="shortcut icon" href="img/core-img/favicon.ico">');
