@@ -1565,7 +1565,7 @@ App({
               doors:[],
               name:"东区USTC1958",
               other_name:"ustc1958",
-              img:["add_figs/东区1958.jpeg"],
+              img:["add_figs/东区1958.jpg"],
               page_link:"",
             },
             {
