@@ -1,0 +1,26 @@
+<view class="select_top">
+  <image class="select_left" src="{{select_left}}"></image>
+  <view class="select_title">周边中心点选择</view>
+  <input class="select_input" disabled="true" bindtap="select_show" value="{{select_value}}"></input>
+  <image class="select_right" src="{{select_right}}" bindtap="select_show"></image>
+</view>
+<view class="select_result" hidden="{{select_hidden}}">
+  <view class="result" wx:for="{{select_array}}" wx:key="index" bindtap="getSelectValue" data-postname="{{item}}">
+    <view>{{item}}</view>
+  </view>
+</view>
+
+<view class="search_result_top">
+  <view class="search_result" wx:for="{{search_array}}" wx:key="index" data-postname="{{item}}">
+    <image class="img" src="{{item.img}}"></image>
+    <view class="right">
+      <view class="name_top">
+        <view class="name" data-name="{{item.name}}" data-lat="{{item.latitude}}" data-lon="{{item.longtitude}}" data-img="{{item.img}}" bindtap="navigate_next">{{item.name}}</view>
+        <image class="icon" src="{{icon}}" data-name="{{item.name}}" data-lat="{{item.latitude}}" data-lon="{{item.longtitude}}" data-img="{{item.img}}" bindtap="navigate_next"></image>
+      </view>
+      <view class="line"></view>
+      <view class="distance">距您{{item.dist}}km</view>
+      <view class="intro">{{item.intro}}</view>
+    </view>
+  </view>
+</view>

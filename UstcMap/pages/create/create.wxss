@@ -1,0 +1,37 @@
+.create-new{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20rpx;
+}
+
+.rate{
+  margin-left:30rpx;
+  display:flex;
+  flex-direction: row;
+}
+
+.rate-icon{
+  width:65rpx;
+  height:60rpx;
+}
+
+.create-button{
+  background-color: #07C160;
+  color:#FFF;
+  width:120rpx;
+  height:60rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size:28rpx;
+}
+
+.text-place{
+  margin: 20rpx 40rpx;
+}
+
+.input{
+  height:200rpx;
+  width:100%;
+}

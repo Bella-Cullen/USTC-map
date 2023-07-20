@@ -1,0 +1,71 @@
+<view class="top_img">
+  <image class="img" src="{{restaurant}}" bindtap="restaurant"></image>
+  <image class="img" src="{{hotel}}" bindtap="hotel"></image>
+  <image class="img" src="{{traffic}}" bindtap="traffic"></image>
+  <image class="img" src="{{delivery}}" bindtap="delivery"></image>
+</view>
+<view class="top_txt">
+  <view class="txt" bindtap="restaurant">美食</view>
+  <view class="txt" bindtap="hotel">酒店</view>
+  <view class="txt" bindtap="traffic">交通</view>
+  <view class="txt" bindtap="delivery">快递点</view>
+</view>
+
+<view class="top_img">
+  <image class="img" src="{{hospital}}" bindtap="hospital"></image>
+  <image class="img" src="{{drug}}" bindtap="drug"></image>
+  <image class="img" src="{{sports}}" bindtap="sports"></image>
+  <image class="img" src="{{store}}" bindtap="store"></image>
+</view>
+<view class="top_txt">
+  <view class="txt" bindtap="hospital">医院</view>
+  <view class="txt" bindtap="drug">药店</view>
+  <view class="txt" bindtap="sports">运动</view>
+  <view class="txt" bindtap="store">超市</view>
+</view>
+
+<view class="top_img">
+  <image class="img" src="{{hair}}" bindtap="hair"></image>
+  <image class="img" src="{{mobile}}" bindtap="mobile"></image>
+  <image class="img" src="{{fruit}}" bindtap="fruit"></image>
+  <image class="img" src="{{tea}}" bindtap="tea"></image>
+</view>
+<view class="top_txt">
+  <view class="txt" bindtap="hair">理发</view>
+  <view class="txt" bindtap="mobile">手机</view>
+  <view class="txt" bindtap="fruit">水果</view>
+  <view class="txt2" bindtap="tea">咖啡&奶茶</view>
+</view>
+
+<view class="top_img">
+  <image class="img" src="{{mall}}" bindtap="mall"></image>
+  <image class="img" src="{{scenery}}" bindtap="scenery"></image>
+  <image class="img" src="{{cinema}}" bindtap="cinema"></image>
+  <image class="img" src="{{ebike}}" bindtap="ebike"></image>
+</view>
+<view class="top_txt">
+  <view class="txt" bindtap="mall">商场</view>
+  <view class="txt" bindtap="scenery">旅游</view>
+  <view class="txt" bindtap="cinema">影院</view>
+  <view class="txt2" bindtap="ebike">共享电瓶车</view>
+</view>
+
+<view class="top_img">
+  <image class="img" src="{{glasses}}" bindtap="glasses"></image>
+  <image class="img" src="{{bank}}" bindtap="bank"></image>
+  <image class="img" src="{{clothes}}" bindtap="clothes"></image>
+  <image class="img" src="{{bicycle}}" bindtap="bicycle"></image>
+</view>
+<view class="top_txt">
+  <view class="txt" bindtap="glasses">眼镜</view>
+  <view class="txt" bindtap="bank">银行</view>
+  <view class="txt" bindtap="clothes">服装</view>
+  <view class="txt2" bindtap="bicycle">自行车售卖</view>
+</view>
+
+<view class="top_img">
+  <image class="img" src="{{other}}" bindtap="other"></image>
+</view>
+<view class="top_txt">
+  <view class="txt" bindtap="other">更多</view>
+</view>

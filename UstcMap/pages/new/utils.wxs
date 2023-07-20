@@ -1,0 +1,12 @@
+var containsTarget = function(array, target) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === target) {
+      return true;
+    }
+  }
+  return false;
+}
+
+module.exports = {
+  containsTarget: containsTarget
+}

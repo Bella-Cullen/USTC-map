@@ -1,0 +1,21 @@
+.model{
+  width: 100%;
+}
+.model-name{
+  text-align: center;
+  margin-top: 10rpx;
+  font-size: large;
+  color: blue;
+}
+.map{
+  position: absolute;
+  z-index: 1;
+}
+.location{
+  position: absolute;
+  margin-top: 530rpx;
+  margin-left: 655rpx;
+  width:70rpx;
+  height:70rpx;
+  z-index: 20;
+}

@@ -1,0 +1,70 @@
+<view class="header">
+  <image wx:if="{{!userInfo}}" src="../../images/default_touxiang.png" class="touxiang"></image>
+  <image wx:if="{{userInfo}}" src="{{userInfo.avatarUrl}}" class="touxiang"></image>
+  <view class="show-head">
+    <text wx:if="{{!userInfo}}" class="nicheng">猜猜我是谁呀</text>
+    <text wx:if="{{userInfo}}" class="nicheng">{{userInfo.nickName}}</text>
+    <text wx:if="{{!userInfo}}" bindtap="login" class="login_btn">点击登录</text>
+    <text wx:if="{{userInfo}}" bindtap="logout" class="login_btn">退出登录</text>
+  </view>
+</view>
+
+<view class="book">
+  <view class="book_title">
+    <image class="book_title_icon" src="{{book_title_icon}}"></image>
+    <view class="book_title_text">生活攻略</view>
+  </view>
+  <view class="book_line"></view>
+  <view class="book_book1">
+    <image class="book_book1_icon" src="{{book_book_icon}}"></image>
+    <view class="book_book1_text" bindtap="book_show1">中科大新生指北</view>
+  </view>
+  <view class="book_book2">
+    <image class="book_book2_icon" src="{{book_book_icon}}"></image>
+    <view class="book_book2_text" bindtap="book_show2">中科大不完全入学指南</view>
+  </view>
+</view>
+
+<view class="link">
+  <view class="link_title">
+    <image class="link_title_icon" src="{{link_title_icon}}"></image>
+    <view class="link_title_text">友情链接</view>
+  </view>
+  <view class="link_line"></view>
+  <view class="link_link1">
+    <image class="link_link1_icon" src="{{link_link_icon}}"></image>
+    <view class="link_link1_text" bindtap="link_show1">我的科大</view>
+  </view>
+  <view class="link_link2">
+    <image class="link_link2_icon" src="{{link_link_icon}}"></image>
+    <view class="link_link2_text" bindtap="link_show2">评课社区</view>
+  </view>
+</view>
+
+<view class="about">
+  <view class="about_title">
+    <image class="about_title_icon" src="{{about_title_icon}}"></image>
+    <view class="about_title_text">关于我们</view>
+  </view>
+  <view class="about_line"></view>
+  <view class="about_about0">
+    <image class="about_about0_icon" src="{{about_shengming_icon}}"></image>
+    <view class="about_about0_text" bindtap="about_shengming">软件声明</view>
+  </view>
+  <view class="about_about3">
+    <image class="about_about3_icon" src="{{about_thanks_icon}}"></image>
+    <view class="about_about3_text" bindtap="about_thanks">特别鸣谢</view>
+  </view>
+  <view class="about_about1">
+    <image class="about_about1_icon" src="{{about_qq_icon}}"></image>
+    <view class="about_about1_text" bindtap="about_qq">QQ: 3118592648(点击复制)</view>
+  </view>
+  <view class="about_about2">
+    <image class="about_about2_icon" src="{{about_wx_icon}}"></image>
+    <view class="about_about2_text" bindtap="about_wx">微信: sw02230524(点击复制)</view>
+  </view>
+  <view class="about_about4" hidden="true">
+    <image class="about_about4_icon" src="{{about_feedback_icon}}"></image>
+    <button class="about_about4_text" plain="true" open-type="feedback">反馈与建议</button>
+  </view>
+</view>

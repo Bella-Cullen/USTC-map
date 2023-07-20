@@ -1,0 +1,10 @@
+<view class="header">
+  <button wx:if="{{!userInfo}}" bindtap="login" type="primary" class="login_btn">点击登录</button>
+  <view wx:else class="show-head">
+    <image src="{{userInfo.avatarUrl}}" class="touxiang"></image>
+    <text class="nicheng">{{userInfo.nickName}}</text>
+    <text bindtap="logout">退出登录</text>
+  </view>
+</view>
+<button bindtap="jump" wx:if="{{userInfo}}">点击跳转</button>
+
