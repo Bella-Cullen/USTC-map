@@ -30,6 +30,7 @@ Page({
     hospital_icon:"../../images/campus_hospital.png",
     aed_icon:"../../images/campus_aed.png",
     others_icon:"../../images/campus_others.png",
+    all_icon:"../../images/campus_all.png",
   },
   select_show:function(e){
     this.setData({
@@ -268,6 +269,18 @@ Page({
     else mode1='4';
     wx.navigateTo({
       url: '../../pages/campus_next/campus_next?mode_index1='+mode1+'&mode_index2=8&mode_index3=0&mode_image=../../images/campus_others.png',
+    })
+  },
+  all:function(e){
+    var mode1;
+    var value=this.data.select_value;
+    if(value=='西校区') mode1='0';
+    else if(value=='中校区') mode1='1';
+    else if(value=='东校区') mode1='2';
+    else if(value=='高新区') mode1='3';
+    else mode1='4';
+    wx.navigateTo({
+      url: '../../pages/campus_next/campus_next?mode_index1='+mode1+'&mode_index2=9&mode_index3=0&mode_image=../../images/campus_n_all.png',
     })
   },
 })

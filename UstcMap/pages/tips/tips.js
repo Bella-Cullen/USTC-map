@@ -1,5 +1,6 @@
 //TODO1:联系地大小程序开发者,几个网站和pdf作者
 //TODO2:反馈样式(现在已hidden)
+const app=getApp()
 Page({
   data: {
     pdf_url1:"https://myustc.feixu.site/hello/%E4%B8%AD%E7%A7%91%E5%A4%A7%E6%96%B0%E7%94%9F%E6%8C%87%E5%8C%97.pdf",
@@ -14,6 +15,47 @@ Page({
     about_shengming_icon:"../../images/shengming.png",
     about_thanks_icon:"../../images/thanks.png",
     about_feedback_icon:"../../images/feedback.png",
+    userInfo:'',
+  },
+  onLoad(){
+    this.setData({
+      userInfo:app.globalData.userinfo,
+    })
+  },
+  login(){
+    this.onLoad();
+    if(!this.data.userInfo){
+      // 调用 wx.login 方法获取用户登录凭证 code
+    let that=this;
+    console.log('执行')
+    wx.getUserProfile({
+      desc:'用于获取用户信息',
+      success:res=>{
+        console.log('success',res.userInfo)
+        //缓存用户信息
+        app.globalData.userinfo=res.userInfo;
+        wx.setStorageSync('user', res.userInfo)
+        that.setData({
+          userInfo:res.userInfo
+        })
+        // wx.navigateTo({
+        //   url: '/pages/new/new'
+        // })
+      },
+      fail:res=>{
+        console.log('fail',res)
+      }
+    })
+    }
+    
+  },
+  logout() {
+    this.setData({
+      userInfo:''
+    })
+    //wx.setStorageSync('user', '')
+    app.globalData.openid=null
+    app.globalData.userinfo=null
   },
   book_show1:function(e){
     wx.showLoading({

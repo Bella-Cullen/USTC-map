@@ -9,12 +9,14 @@
 
 <view class="searchresult" wx:if="{{inputvalue != ''}}" hidden="{{search_hidden}}">
   <view class="result" wx:for="{{search_result}}" wx:key="index" bindtap="getInputValue" data-postname="{{item.name}}">
+    <image class="result_img" src="../../images/result_img.png"></image>
     <view>{{item.name}}</view>
   </view>
 </view>
 
 <view class="searchresult" hidden="{{history_hidden}}">
   <view class="result" wx:for="{{history}}" wx:key="index" bindtap="getInputValue" data-postname="{{item}}">
+    <image class="result_img" src="../../images/result_img.png"></image>
     <view>{{item}}</view>
   </view>
 </view>

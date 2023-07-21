@@ -1,0 +1,96 @@
+<wxs module="utils" src="../../pages/new/utils.wxs"></wxs>
+
+<view class="send-box">
+  <view class="title">{{name}}</view>
+  <view class="send" bindtap="sendComment">快来发表自己的评论吧----></view>
+</view>
+
+<view class="rate">
+  <image src="{{sumRate>=1?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon"></image>
+  <image src="{{sumRate>=2?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon"></image>
+  <image src="{{sumRate>=3?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon"></image>
+  <image src="{{sumRate>=4?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon"></image>
+  <image src="{{sumRate>=5?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon"></image>
+  <view class="rate_num">{{sumRate}}</view>
+</view>
+
+<view class="intro">
+  <view class="intro_title">简介</view>
+  <view class="line"></view>
+  <view class="intro_txt">{{intro}}</view>
+</view>
+
+<!-- 一条评论的布局 -->
+<block wx:for="{{actionsList}}" wx:key="index">
+<view class="message">
+<view class="left">
+<image class="face-img" src="{{item.faceImg}}"></image>
+</view>
+<view class="right">
+  <view class="nickname_top">
+    <view class="nickname">{{item.nickname}}</view>
+    <image src="{{item.rate>=1?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="item-rate-icon"></image>
+    <image src="{{item.rate>=2?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="item-rate-icon"></image>
+    <image src="{{item.rate>=3?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="item-rate-icon"></image>
+    <image src="{{item.rate>=4?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="item-rate-icon"></image>
+    <image src="{{item.rate>=5?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="item-rate-icon"></image>
+  </view>
+  <!-- 评论 -->
+  <view>{{item.text}}</view>
+  <!-- 1图片 -->
+  <!-- <view class="img-wrap">
+  <image src="/pages/images/map2.png" class="img-style"></image>
+  </view> -->
+  <!-- 2-3图片 -->
+  <!-- <view class="img-wrap">
+  <image src="/pages/images/map2.png" class="img-style2"></image>
+  <image src="/pages/images/map2.png" class="img-style2"></image>
+  <image src="/pages/images/map2.png" class="img-style2"></image>
+  <image src="/pages/images/map2.png" class="img-style2"></image>
+  </view> -->
+
+
+  <view class="time-delete">
+  <view class="time">{{item.time}}</view>
+  <view class="delete" wx:if="{{myOpenid==item._openid&&isLogin}}" bindtap="deleteAction" data-id="{{item._id}}">删除</view>
+  </view>
+
+
+  <view class="hudong-box">
+    <view class="hudong-subbox">
+    <image src="/pages/images/pinglun.png" class="hudong-img" bindtap="showInput"></image>
+    <view>{{item.commentList.length}}</view>
+    </view>
+
+    <view class="hudong-subbox" catchtap="prizeAction" data-id="{{item._id}}">
+    <image wx:if="{{utils.containsTarget(item.prizeList, myOpenid)}}" src="/pages/images/stored.png" class="hudong-img"/>
+    <image wx:else src="/pages/images/notstored.png" class="hudong-img"/>
+    <view>{{item.prizeList.length}}</view>
+    </view>
+  </view>
+  <!-- <view class="prize-box">
+  <image src="/pages/images/notstored.png" class="prize-img"></image>
+  <view>sb1,</view>
+  <view>sb2</view>
+  </view> -->
+
+<!-- comIndex下标 -->
+  <view class="comment-box" wx:if="{{item.commentList.length>0}}">
+  <block wx:for="{{item.commentList}}" wx:key="index" wx:for-item="comitem" wx:for-index="comIndex">
+  <view class="comment" bindlongtap="deleteComment" data-id="{{item._id}}" data-index="{{comIndex}}" data-openid="{{item._openid}}" data-thisid="{{comitem.openid}}">
+    <text class="comment-nickname">{{comitem.nickname}}：</text>
+    <text>{{comitem.text}}</text>
+  </view>
+  </block>
+</view>
+
+<!-- 评论输入 -->
+<view class="comment-input">
+    <view class="input-left"> 
+    <input bindinput="onInput" placeholder="请输入内容" class="cinput-box" value="{{inputValue}}"/>
+    </view>
+      <view class="cinput-button" bindtap="subcomment" data-id="{{item._id}}">评论</view>
+  </view>
+</view>
+</view>
+</block>

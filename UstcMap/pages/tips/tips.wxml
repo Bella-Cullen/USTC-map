@@ -1,3 +1,14 @@
+<view class="header">
+  <image wx:if="{{!userInfo}}" src="../../images/default_touxiang.png" class="touxiang"></image>
+  <image wx:if="{{userInfo}}" src="{{userInfo.avatarUrl}}" class="touxiang"></image>
+  <view class="show-head">
+    <text wx:if="{{!userInfo}}" class="nicheng">猜猜我是谁呀</text>
+    <text wx:if="{{userInfo}}" class="nicheng">{{userInfo.nickName}}</text>
+    <text wx:if="{{!userInfo}}" bindtap="login" class="login_btn">点击登录</text>
+    <text wx:if="{{userInfo}}" bindtap="logout" class="login_btn">退出登录</text>
+  </view>
+</view>
+
 <view class="book">
   <view class="book_title">
     <image class="book_title_icon" src="{{book_title_icon}}"></image>

@@ -27,7 +27,8 @@ Page({
     center_lat:31.838293,
     center_long:117.255652,
     fraction:0.000001,
-    cur_page:[""],
+    cur_name:"",
+    cur_intro:"",
     history_hidden:true,
     history:[],
   },
@@ -75,7 +76,11 @@ Page({
           break;
         if(st.has(place_lst[i].name))
           continue;
-        if(re1.test(place_lst[i].name)||re2.test(place_lst[i].name)){
+        if(value==place_lst[i].name){
+          res.unshift(place_lst[i]);
+          st.add(place_lst[i].name);
+        }
+        else if(re1.test(place_lst[i].name)||re2.test(place_lst[i].name)){
           res.push(place_lst[i]);
           st.add(place_lst[i].name);
         }
@@ -125,8 +130,8 @@ Page({
   //搜索
   nearby_search:function(){
     //text是输入的地址
-    var text = this.data.inputvalue;
-    var his=this.data.history;
+    var text = this.data.inputvalue;   
+    var his = [...this.data.history];
     if(!his.includes(text))his.unshift(text);
     else{
       var tmp=his.indexOf(text);
@@ -135,9 +140,6 @@ Page({
       }
       his[0]=text;
     }
-    this.setData({
-      history:his,
-    })
     //返回的匹配完成的地址数组
     var res=[];
     var mark=[];
@@ -156,13 +158,26 @@ Page({
         }
       }
     }
-    //弹出框
     var texttitle = res.length?"搜索成功":"搜索失败";
-    wx.showToast({
-      title: texttitle,
-      icon: 'success',
-      duration: 2000
-    })
+    if(res.length){
+      this.setData({
+        history:his,
+      })
+    }   
+    if(res.length){
+      wx.showToast({
+        title: texttitle,
+        icon: 'success',
+        duration: 2000
+      })
+    }
+    else{
+      wx.showToast({
+        title: texttitle,
+        icon: 'none',
+        duration: 2000
+      })
+    }
     //更新markers标记点
     var door_num=100;
     for(var i=0;i<res.length;i++) {
@@ -223,7 +238,7 @@ Page({
         center_long:res[0].longtitude,
         center_lat:res[0].latitude,
       })
-    }
+    } 
   },
   //生命周期函数--监听页面加载
   onLoad: function (options) {
@@ -358,10 +373,10 @@ Page({
   //点击地点进行路径规划
   onPointTap: function(e) {
     var i=e.detail.markerId;
-    if(i>=100){
-      console.log("return");
-      return;
-    }
+    // if(i>=100){
+    //   console.log("return");
+    //   return;
+    // }
     // console.log(this.data.currentdatabase);
     var startPoint = JSON.stringify({
       'name':this.data.markers[0].callout.content,
@@ -375,25 +390,18 @@ Page({
     });
     this.setData({
       hidden:false,
-      page_hidden:true,
+      page_hidden:false,
       modalname:this.data.currentdatabase[i-1].name,
       startPoint:startPoint,
       endPoint:endPoint,
-      place_img_src:this.data.currentdatabase[i-1].img
+      place_img_src:this.data.currentdatabase[i-1].img,
+      cur_name:this.data.currentdatabase[i-1].name,
+      cur_intro:this.data.currentdatabase[i-1].page_link,
     })
-    if(this.data.currentdatabase[i-1].page_link!=""){
-      this.setData({
-        page_hidden:false,
-        cur_page:this.data.currentdatabase[i-1].page_link,
-      })
-    }
   },
   page_click:function(){
-    wx.previewImage({
-      urls: this.data.cur_page,
-      success:(res=>{
-        console.log('接口调用成功',res)
-      })
+    wx.navigateTo({
+      url: '../../pages/new/new?name='+this.data.cur_name+'&intro='+this.data.cur_intro,
     })
   },
   modalcancel:function(e)

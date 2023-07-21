@@ -59,13 +59,14 @@
 }
 .searchresult {
   position: absolute;
-  left:90rpx;
-  width: 480rpx;
+  left:20rpx;
+  width: 550rpx;
   background: #fff;
   z-index: 100;
 }
 .result {
-  height: 50rpx;
+  margin-left: 15rpx;
+  height: 75rpx;
   line-height: 50rpx;
   text-align: left;
   border-bottom: 1px solid #eee;
@@ -73,8 +74,13 @@
   color: #333;
   font-size: 30rpx;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+}
+.result_img{
+  width: 40rpx;
+  height:40rpx;
+  margin-right: 30rpx;
 }
 
 .map{
@@ -89,3 +95,4 @@
   height:70rpx;
   z-index: 20;
 }
+

@@ -381,10 +381,10 @@
   margin-top: 8rpx;
 }
 .others{
-  width:70rpx;
-  height:70rpx;
+  width:60rpx;
+  height:60rpx;
   margin-left: 75rpx;
-  margin-top: 16rpx;
+  margin-top: 25rpx;
 }
 .other_content_text{
   display: flex;
@@ -421,4 +421,11 @@
   font-size: medium;
   margin-left:100rpx;
   font-family: cursive;
+}
+.all_top{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+  margin-bottom: 200rpx;
 }

@@ -126,7 +126,7 @@ Page({
   nearby_search:function(){
     //text是输入的地址
     var text = this.data.inputvalue;
-    var his=this.data.history;
+    var his = [...this.data.history];
     if(!his.includes(text))his.unshift(text);
     else{
       var tmp=his.indexOf(text);
@@ -135,9 +135,6 @@ Page({
       }
       his[0]=text;
     }
-    this.setData({
-      history:his,
-    })
     //返回的匹配完成的地址数组
     var res=[];
     var mark=[];
@@ -158,11 +155,25 @@ Page({
     }
     //弹出框
     var texttitle = res.length?"搜索成功":"搜索失败";
-    wx.showToast({
-      title: texttitle,
-      icon: 'success',
-      duration: 2000
-    })
+    if(res.length){
+      this.setData({
+        history:his,
+      })
+    }   
+    if(res.length){
+      wx.showToast({
+        title: texttitle,
+        icon: 'success',
+        duration: 2000
+      })
+    }
+    else{
+      wx.showToast({
+        title: texttitle,
+        icon: 'none',
+        duration: 2000
+      })
+    }
     //更新markers标记点
     var door_num=100;
     for(var i=0;i<res.length;i++) {

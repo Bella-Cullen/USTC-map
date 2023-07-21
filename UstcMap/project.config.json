@@ -43,6 +43,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
   "appid": "wxc5dd87376d3fa90c",
+  "cloudfunctionRoot": "pages/cloud/",
   "projectname": "miniprogram-92",
   "condition": {},
   "editorSetting": {

@@ -112,3 +112,10 @@
     <view class="others_text" bindtap="others">其它</view>
   </view>
 </view>
+
+<view class="other">
+  <view class="all_top">
+    <image class="other_icon" src="{{all_icon}}" bindtap="all"></image>
+    <view class="other_title" bindtap="all">全部</view>
+  </view>
+</view>

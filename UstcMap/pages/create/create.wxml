@@ -1,0 +1,16 @@
+<!-- 发布动态 -->
+<view class="create-new">
+<view class="create-button" bindtap="createNew">发表</view>
+</view>
+
+<view class="rate">
+<image src="{{rate>=1?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon" bindtap="rate1"></image>
+<image src="{{rate>=2?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon" bindtap="rate2"></image>
+<image src="{{rate>=3?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon" bindtap="rate3"></image>
+<image src="{{rate>=4?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon" bindtap="rate4"></image>
+<image src="{{rate>=5?'/pages/images/star.png':'/pages/images/emptystar.png'}}" class="rate-icon" bindtap="rate5"></image>
+</view>
+
+<view class="text-place">
+<textarea placeholder="评论内容" class="input" maxlength="2000" bindinput="getValue"></textarea>
+</view>

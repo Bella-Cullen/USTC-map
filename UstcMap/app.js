@@ -2,6 +2,8 @@
 //TODO2:campus页面和surrounding页面解决图字不对齐问题:截图当做整体
 App({
   globalData: {
+    userinfo:null,
+    openid:null,
     campus: [
       {
         "data_west": [
@@ -647,7 +649,7 @@ App({
                 doors: [],
                 name: "严济慈广场", // TODO:
                 other_name: "",
-                img: ["add_figs/严济慈.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/严济慈.jpg"],
                 page_link: "",
               },
               {
@@ -820,7 +822,7 @@ App({
                 doors: [],
                 name: "同辐2号楼AED",
                 other_name: "AED",
-                img: ["add_figs/同辐2号楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/同辐2号楼AED.jpg"],
               },
               {
                 latitude: 31.835725,
@@ -828,7 +830,7 @@ App({
                 doors: [],
                 name: "同辐环大厅AED",
                 other_name: "AED",
-                img: ["add_figs/同辐环大厅AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/同辐环大厅AED.jpg"],
               },
               {
                 latitude: 31.835244,
@@ -836,7 +838,7 @@ App({
                 doors: [],
                 name: "同辐3号楼AED",
                 other_name: "AED",
-                img: ["add_figs/同辐3号楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/同辐3号楼AED.jpg"],
               },
               {
                 latitude: 31.8375,
@@ -844,7 +846,7 @@ App({
                 doors: [],
                 name: "KTXAED",
                 other_name: "AED",
-                img: ["add_figs/KTXAED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/KTXAED.jpg"],
               },
               {
                 latitude: 31.837171,
@@ -852,7 +854,7 @@ App({
                 doors: [],
                 name: "火灾AED",
                 other_name: "AED",
-                img: ["add_figs/火灾AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/火灾AED.jpg"],
               },
               {
                 latitude: 31.838641,
@@ -860,7 +862,7 @@ App({
                 doors: [],
                 name: "特种楼AED",
                 other_name: "AED",
-                img: ["add_figs/特种楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/特种楼AED.jpg"],
               },
               {
                 latitude: 31.838957,
@@ -868,7 +870,7 @@ App({
                 doors: [],
                 name: "西活AED",
                 other_name: "AED",
-                img: ["add_figs/西活AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/西活AED.jpg"],
               },
               {
                 latitude: 31.839795,
@@ -876,7 +878,7 @@ App({
                 doors: [],
                 name: "学生公寓5AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓5AED.jpg"], // TODO: 
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓5AED.jpg"], // TODO: 
               },
               {
                 latitude: 31.840036,
@@ -884,7 +886,7 @@ App({
                 doors: [],
                 name: "学生公寓4AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓4AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓4AED.jpg"],
               },
               {
                 latitude: 31.840993,
@@ -892,7 +894,7 @@ App({
                 doors: [],
                 name: "学生公寓1AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓1AED.jpg"], // TODO:
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓1AED.jpg"], // TODO:
               },
               {
                 latitude: 31.840624,
@@ -900,7 +902,7 @@ App({
                 doors: [],
                 name: "学生公寓2AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓2AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓2AED.jpg"],
               },
               {
                 latitude: 31.840348,
@@ -908,7 +910,7 @@ App({
                 doors: [],
                 name: "学生公寓6AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓6AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓6AED.jpg"],
               },
               {
                 latitude: 31.840988,
@@ -916,7 +918,7 @@ App({
                 doors: [],
                 name: "西北保安亭AED",
                 other_name: "AED",
-                img: ["add_figs/西北保安亭AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/西北保安亭AED.jpg"],
               },
               {
                 latitude: 31.840648,
@@ -924,7 +926,7 @@ App({
                 doors: [],
                 name: "科技楼AED",
                 other_name: "AED",
-                img: ["add_figs/科技楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/科技楼AED.jpg"],
               },
               {
                 latitude: 31.838792,
@@ -932,7 +934,7 @@ App({
                 doors: [],
                 name: "西东保安亭AED",
                 other_name: "AED",
-                img: ["add_figs/西东保安亭AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/西东保安亭AED.jpg"],
               },
               {
                 latitude: 31.83565,
@@ -940,7 +942,7 @@ App({
                 doors: [],
                 name: "学生公寓8AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓8AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓8AED.jpg"],
               },
               {
                 latitude: 31.835979,
@@ -948,7 +950,7 @@ App({
                 doors: [],
                 name: "学生公寓9AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓9AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓9AED.jpg"],
               },
               {
                 latitude: 31.836361,
@@ -956,7 +958,7 @@ App({
                 doors: [],
                 name: "学生公寓10AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓10AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓10AED.jpg"],
               },
               {
                 latitude: 31.839081,
@@ -964,7 +966,7 @@ App({
                 doors: [],
                 name: "西图AED",
                 other_name: "AED",
-                img: ["add_figs/西图AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/西图AED.jpg"],
               },
               {
                 latitude: 31.838388,
@@ -972,7 +974,7 @@ App({
                 doors: [],
                 name: "3AAED",
                 other_name: "AED",
-                img: ["add_figs/3AAED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/3AAED.jpg"],
               },
               {
                 latitude: 31.837819,
@@ -980,7 +982,7 @@ App({
                 doors: [],
                 name: "3CAED",
                 other_name: "AED",
-                img: ["add_figs/3CAED.jpg"], // TODO: 有人
+                img: ["https://sbsk.gitee.io/image/photo/3CAED.jpg"], // TODO: 有人
               },
               {
                 latitude: 31.837661,
@@ -988,7 +990,7 @@ App({
                 doors: [],
                 name: "电四楼AED",
                 other_name: "AED",
-                img: ["add_figs/电四楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/电四楼AED.jpg"],
               },
               {
                 latitude: 31.837498,
@@ -996,7 +998,7 @@ App({
                 doors: [],
                 name: "电一楼AED",
                 other_name: "AED",
-                img: ["add_figs/电一楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/电一楼AED.jpg"],
               },
               {
                 latitude: 31.837481,
@@ -1004,7 +1006,7 @@ App({
                 doors: [],
                 name: "电二楼AED",
                 other_name: "AED",
-                img: ["add_figs/电二楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/电二楼AED.jpg"],
               },
               {
                 latitude: 31.838249,
@@ -1012,7 +1014,7 @@ App({
                 doors: [],
                 name: "力一楼AED",
                 other_name: "AED",
-                img: ["add_figs/力一楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/力一楼AED.jpg"],
               },
               {
                 latitude: 31.838002,
@@ -1020,7 +1022,7 @@ App({
                 doors: [],
                 name: "力二楼AED",
                 other_name: "AED",
-                img: ["add_figs/力二楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/力二楼AED.jpg"],
               },
               {
                 latitude: 31.837532,
@@ -1028,7 +1030,7 @@ App({
                 doors: [],
                 name: "力四楼AED",
                 other_name: "AED",
-                img: ["add_figs/力四楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/力四楼AED.jpg"],
               },
             ],
           ],
@@ -1165,7 +1167,7 @@ App({
                 longtitude: 117.264430,
                 name: "快递柜",
                 other_name: "快递",
-                img: ["add_figs/中区快递柜.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/中区快递柜.jpg"],
                 doors: [],
                 page_link: "",
               },
@@ -1266,7 +1268,7 @@ App({
                 longtitude: 117.263974,
                 name: "游泳馆",
                 other_name: "",
-                img: ["add_figs/游泳馆.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/游泳馆.jpg"],
                 doors: [],
                 page_link: "",
               },
@@ -1302,7 +1304,7 @@ App({
                 longtitude: 117.262948,
                 name: "中区学生公寓3号楼",
                 other_name: "",
-                img: ["add_figs/中区3号楼.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/中区3号楼.jpg"],
                 doors: [],
                 page_link: "",
               },
@@ -1347,7 +1349,7 @@ App({
                 doors: [],
                 name: "理化科学实验中心AED",
                 other_name: "AED",
-                img: ["add_figs/理化科学实验中心AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/理化科学实验中心AED.jpg"],
               },
             ],
           ],
@@ -1411,7 +1413,7 @@ App({
                 doors: [],
                 name: "东苑餐厅",
                 other_name: "东苑食堂",
-                img: ["add_figs/东苑.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/东苑.jpg"],
                 page_link: "https://ysjt.ustc.edu.cn/main.htm",
               },
               {
@@ -1420,7 +1422,7 @@ App({
                 doors: [],
                 name: "星座餐厅（清真）",
                 other_name: "星座食堂",
-                img: ["add_figs/星座.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/星座.jpg"],
                 page_link: "https://ysjt.ustc.edu.cn/main.htm",
               },
               {
@@ -1429,7 +1431,7 @@ App({
                 doors: [],
                 name: "美食广场",
                 other_name: "美广",
-                img: ["add_figs/美广.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/美广.jpg"],
                 page_link: "https://ysjt.ustc.edu.cn/main.htm",
               },
             ],
@@ -1457,7 +1459,7 @@ App({
                 doors: [],
                 name: "第一教学楼",
                 other_name: "一教",
-                img: ["add_figs/一教.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/一教.jpg"],
                 page_link: "https://catalog.ustc.edu.cn/query/classroom",
               },
               {
@@ -1466,7 +1468,7 @@ App({
                 doors: [],
                 name: "第五教学楼",
                 other_name: "五教",
-                img: ["add_figs/五教.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/五教.jpg"],
                 page_link: "https://catalog.ustc.edu.cn/query/classroom",
               },
               {
@@ -1475,7 +1477,7 @@ App({
                 doors: [],
                 name: "第二教学楼",
                 other_name: "二教",
-                img: ["add_figs/二教.jpg"], // TODO:
+                img: ["https://sbsk.gitee.io/image/photo/二教.jpg"], // TODO:
                 page_link: "https://catalog.ustc.edu.cn/query/classroom",
               },
             ],
@@ -1486,7 +1488,7 @@ App({
                 doors: [],
                 name: "东区图书馆",
                 other_name: "东图",
-                img: ["add_figs/东图.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/东图.jpg"],
                 page_link: "https://lib.ustc.edu.cn/",
               },
 
@@ -1498,7 +1500,7 @@ App({
                 doors: [],
                 name: "理化大楼",
                 other_name: "基础科学教学实验中心",
-                img: ["add_figs/理化大楼.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/理化大楼.jpg"],
                 page_link: "",
               },
               {
@@ -1507,7 +1509,7 @@ App({
                 doors: [],
                 name: "地空学院",
                 other_name: "地空",
-                img: ["add_figs/地空.jpg"], // TODO:
+                img: ["https://sbsk.gitee.io/image/photo/地空.jpg"], // TODO:
                 page_link: "http://ess.ustc.edu.cn/main.htm",
               },
               {
@@ -1516,7 +1518,7 @@ App({
                 doors: [],
                 name: "数学科学学院",
                 other_name: "数院",
-                img: ["add_figs/管科楼.jpg"], // TODO:
+                img: ["https://sbsk.gitee.io/image/photo/管科楼.jpg"], // TODO:
                 page_link: "https://math.ustc.edu.cn/main.htm",
               },
               {
@@ -1525,7 +1527,7 @@ App({
                 doors: [],
                 name: "国家高性能计算中心",
                 other_name: "",
-                img: ["add_figs/高性能.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/高性能.jpg"],
                 page_link: "http://cs.ustc.edu.cn/2020/0905/c22639a448575/page.htm",
               },
               {
@@ -1534,7 +1536,7 @@ App({
                 doors: [],
                 name: "少年班学院",
                 other_name: "少院",
-                img: ["add_figs/人上人.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/人上人.jpg"],
                 page_link: "https://sgy.ustc.edu.cn/",
               },
               {
@@ -1543,7 +1545,7 @@ App({
                 doors: [],
                 name: "近代物理楼",
                 other_name: "",
-                img: ["add_figs/近代物理楼.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/近代物理楼.jpg"],
                 page_link: "https://mphy.ustc.edu.cn/main.htm",
               },
               {
@@ -1597,7 +1599,7 @@ App({
                 doors: [],
                 name: "东区西门",
                 other_name: "",
-                img: ["add_figs/东西.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/东西.jpg"],
                 page_link: "",
               },
               {
@@ -1606,7 +1608,7 @@ App({
                 doors: [],
                 name: "东区南门",
                 other_name: "",
-                img: ["add_figs/东南.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/东南.jpg"],
                 page_link: "",
               },
             ],
@@ -1629,7 +1631,7 @@ App({
                 doors: [],
                 name: "校车站",
                 other_name: "",
-                img: ["add_figs/东校.png"], // TODO:
+                img: ["https://sbsk.gitee.io/image/photo/东校.png"], // TODO:
                 page_link: "",
               },
             ],
@@ -1642,7 +1644,7 @@ App({
                 doors: [],
                 name: "东区操场",
                 other_name: "",
-                img: ["add_figs/东操.png"], // TODO:
+                img: ["https://sbsk.gitee.io/image/photo/东操.png"], // TODO:
                 page_link: "",
               },
               {
@@ -1651,7 +1653,7 @@ App({
                 doors: [],
                 name: "篮球场",
                 other_name: "",
-                img: ["add_figs/东篮.png"],
+                img: ["https://sbsk.gitee.io/image/photo/东篮.png"],
                 page_link: "",
               },
 
@@ -1665,7 +1667,7 @@ App({
                 doors: [],
                 name: "校史馆",
                 other_name: "",
-                img: ["add_figs/校史馆.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/校史馆.jpg"],
                 page_link: "http://arch.ustc.edu.cn/main.htm",
               },
               {
@@ -1674,7 +1676,7 @@ App({
                 doors: [],
                 name: "郭沫若广场",
                 other_name: "",
-                img: ["add_figs/郭广.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/郭广.jpg"],
                 page_link: "",
               },
 
@@ -1728,7 +1730,7 @@ App({
                 doors: [],
                 name: "东区校医院",
                 other_name: "",
-                img: ["add_figs/东区校医院.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/东区校医院.jpg"],
                 page_link: "http://hospital.ustc.edu.cn/",
               },
             ],
@@ -1740,7 +1742,7 @@ App({
                 doors: [],
                 name: "一教AED",
                 other_name: "AED",
-                img: ["add_figs/一教AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/一教AED.jpg"],
               },
               {
                 latitude: 31.835892,
@@ -1748,7 +1750,7 @@ App({
                 doors: [],
                 name: "体育教学楼AED",
                 other_name: "AED",
-                img: ["add_figs/体育教学楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/体育教学楼AED.jpg"],
               },
               {
                 latitude: 31.835538,
@@ -1756,7 +1758,7 @@ App({
                 doors: [],
                 name: "人文学院AED",
                 other_name: "AED",
-                img: ["add_figs/人文学院AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/人文学院AED.jpg"],
               },
               {
                 latitude: 31.833397,
@@ -1764,7 +1766,7 @@ App({
                 doors: [],
                 name: "校医院AED",
                 other_name: "AED",
-                img: ["add_figs/校医院AED.jpg"], // TODO:
+                img: ["https://sbsk.gitee.io/image/photo/校医院AED.jpg"], // TODO:
               },
               {
                 latitude: 31.834224,
@@ -1772,7 +1774,7 @@ App({
                 doors: [],
                 name: "环资楼AED",
                 other_name: "AED",
-                img: ["add_figs/环资楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/环资楼AED.jpg"],
               },
               {
                 latitude: 31.83339,
@@ -1780,7 +1782,7 @@ App({
                 doors: [],
                 name: "材料楼AED",
                 other_name: "AED",
-                img: ["add_figs/材料楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/材料楼AED.jpg"],
               },
               {
                 latitude: 31.833541,
@@ -1788,7 +1790,7 @@ App({
                 doors: [],
                 name: "近代物理楼AED",
                 other_name: "AED",
-                img: ["add_figs/近代物理楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/近代物理楼AED.jpg"],
               },
               {
                 latitude: 31.83375,
@@ -1796,7 +1798,7 @@ App({
                 doors: [],
                 name: "单分子科学楼AED",
                 other_name: "AED",
-                img: ["add_figs/单分子科学楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/单分子科学楼AED.jpg"],
               },
               {
                 latitude: 31.832891,
@@ -1804,7 +1806,7 @@ App({
                 doors: [],
                 name: "理化大楼AED",
                 other_name: "AED",
-                img: ["add_figs/理化大楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/理化大楼AED.jpg"],
               },
               {
                 latitude: 31.833329,
@@ -1812,7 +1814,7 @@ App({
                 doors: [],
                 name: "物理楼AED",
                 other_name: "AED",
-                img: ["add_figs/物理楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/物理楼AED.jpg"],
               },
               {
                 latitude: 31.834888,
@@ -1820,7 +1822,7 @@ App({
                 doors: [],
                 name: "学生服务中心AED",
                 other_name: "AED",
-                img: ["add_figs/学生服务中心AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生服务中心AED.jpg"],
               },
               {
                 latitude: 31.834976,
@@ -1828,7 +1830,7 @@ App({
                 doors: [],
                 name: "东区治安点AED",
                 other_name: "AED",
-                img: ["add_figs/东区治安点AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/东区治安点AED.jpg"],
               },
               {
                 latitude: 31.836927,
@@ -1836,7 +1838,7 @@ App({
                 doors: [],
                 name: "学生公寓320AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓320AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓320AED.jpg"],
               },
               {
                 latitude: 31.83657,
@@ -1844,7 +1846,7 @@ App({
                 doors: [],
                 name: "学生公寓321AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓321AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓321AED.jpg"],
               },
               {
                 latitude: 31.836132,
@@ -1852,7 +1854,7 @@ App({
                 doors: [],
                 name: "学生公寓322AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓322AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓322AED.jpg"],
               },
               {
                 latitude: 31.835199,
@@ -1860,7 +1862,7 @@ App({
                 doors: [],
                 name: "学生公寓229AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓229AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓229AED.jpg"],
               },
               {
                 latitude: 31.834972,
@@ -1868,7 +1870,7 @@ App({
                 doors: [],
                 name: "学生公寓230AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓230AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓230AED.jpg"],
               },
               {
                 latitude: 31.835414,
@@ -1876,7 +1878,7 @@ App({
                 doors: [],
                 name: "学生公寓215AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓215AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓215AED.jpg"],
               },
               {
                 latitude: 31.835114,
@@ -1884,7 +1886,7 @@ App({
                 doors: [],
                 name: "学生公寓216AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓216AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓216AED.jpg"],
               },
               {
                 latitude: 31.835308,
@@ -1892,7 +1894,7 @@ App({
                 doors: [],
                 name: "学生公寓221AED",
                 other_name: "AED",
-                img: ["add_figs/学生公寓221AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/学生公寓221AED.jpg"],
               },
               {
                 latitude: 31.836485,
@@ -1900,7 +1902,7 @@ App({
                 doors: [],
                 name: "东活一楼AED",
                 other_name: "AED",
-                img: ["add_figs/电一楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/电一楼AED.jpg"],
               },
               {
                 latitude: 31.836397,
@@ -1908,7 +1910,7 @@ App({
                 doors: [],
                 name: "东活四楼AED",
                 other_name: "AED",
-                img: ["add_figs/东活四楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/东活四楼AED.jpg"],
               },
               {
                 latitude: 31.836587,
@@ -1916,7 +1918,7 @@ App({
                 doors: [],
                 name: "行政楼AED",
                 other_name: "AED",
-                img: ["add_figs/行政楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/行政楼AED.jpg"],
               },
               {
                 latitude: 31.837114,
@@ -1924,7 +1926,7 @@ App({
                 doors: [],
                 name: "东图AED",
                 other_name: "AED",
-                img: ["add_figs/东图AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/东图AED.jpg"],
               },
               {
                 latitude: 31.837474,
@@ -1932,7 +1934,7 @@ App({
                 doors: [],
                 name: "老图书馆AED",
                 other_name: "AED",
-                img: ["add_figs/老图书馆AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/老图书馆AED.jpg"],
               },
               {
                 latitude: 31.837975,
@@ -1940,7 +1942,7 @@ App({
                 doors: [],
                 name: "二教AED",
                 other_name: "AED",
-                img: ["add_figs/二教AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/二教AED.jpg"],
               },
               {
                 latitude: 31.839709,
@@ -1948,7 +1950,7 @@ App({
                 doors: [],
                 name: "所系结合专家公寓1楼AED",
                 other_name: "AED",
-                img: ["add_figs/所系结合专家公寓1楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/所系结合专家公寓1楼AED.jpg"],
               },
               {
                 latitude: 31.838749,
@@ -1956,7 +1958,7 @@ App({
                 doors: [],
                 name: "幼儿园AED",
                 other_name: "AED",
-                img: ["add_figs/幼儿园AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/幼儿园AED.jpg"],
               },
               {
                 latitude: 31.840817,
@@ -1964,7 +1966,7 @@ App({
                 doors: [],
                 name: "五教AED",
                 other_name: "AED",
-                img: ["add_figs/五教AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/五教AED.jpg"],
               },
               {
                 latitude: 31.841108,
@@ -1972,7 +1974,7 @@ App({
                 doors: [],
                 name: "科研楼AED",
                 other_name: "AED",
-                img: ["add_figs/科研楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/科研楼AED.jpg"],
               },
               {
                 latitude: 31.841358,
@@ -1980,7 +1982,7 @@ App({
                 doors: [],
                 name: "管科楼AED",
                 other_name: "AED",
-                img: ["add_figs/管科楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/管科楼AED.jpg"],
               },
               {
                 latitude: 31.841236,
@@ -1988,7 +1990,7 @@ App({
                 doors: [],
                 name: "教学行政楼AED",
                 other_name: "AED",
-                img: ["add_figs/教学行政楼AED.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/教学行政楼AED.jpg"],
               },
             ],
           ],
@@ -2000,7 +2002,7 @@ App({
                 doors: [],
                 name: "专家楼",
                 other_name: "",
-                img: ["add_figs/中区专家楼.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/中区专家楼.jpg"],
                 page_link: "",
               },
               {
@@ -2027,7 +2029,7 @@ App({
                 doors: [],
                 name: "教务处",
                 other_name: "",
-                img: ["add_figs/老图书馆.jpg"], // TODO:
+                img: ["https://sbsk.gitee.io/image/photo/老图书馆.jpg"], // TODO:
                 page_link: "https://www.teach.ustc.edu.cn/",
               },
               {
@@ -2036,7 +2038,7 @@ App({
                 doors: [],
                 name: "校园卡补办处",
                 other_name: "",
-                img: ["add_figs/美广.jpg"], // TODO:
+                img: ["https://sbsk.gitee.io/image/photo/美广.jpg"], // TODO:
                 page_link: "https://passport.ustc.edu.cn/login?service=http%3A%2F%2Fecard.ustc.edu.cn%2Fcaslogin",
               },
               {
@@ -2045,7 +2047,7 @@ App({
                 doors: [],
                 name: "东区USTC1958",
                 other_name: "ustc1958",
-                img: ["add_figs/东区1958.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/东区1958.jpg"],
                 page_link: "",
               },
               {
@@ -2054,7 +2056,7 @@ App({
                 doors: [],
                 name: "水上报告厅",
                 other_name: "",
-                img: ["add_figs/水上报告厅.jpg"],
+                img: ["https://sbsk.gitee.io/image/photo/水上报告厅.jpg"],
                 page_link: "",
               },
               {
@@ -2063,7 +2065,7 @@ App({
                 doors: [],
                 name: "东区大礼堂",
                 other_name: "",
-                img: ["add_figs/东区大礼堂.jpg"], // TODO: 车牌号
+                img: ["https://sbsk.gitee.io/image/photo/东区大礼堂.jpg"], // TODO: 车牌号
                 page_link: "",
               },
             ],
@@ -2833,6 +2835,17 @@ App({
       ],
     ]
   },
-  onLaunch() {
+  onLaunch:function(){
+    var that=this;
+    wx.cloud.init({
+      env:'cloud1-4g5vv45i69fe6223',
+    })
+
+    wx.cloud.callFunction({
+      name:'getUserOpenid',
+      success(res){
+        that.globalData.openid=res.result.openid
+      }
+    })
   },
 })

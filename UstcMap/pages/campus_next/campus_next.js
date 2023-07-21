@@ -19,7 +19,8 @@ Page({
     center_lat:31.838293,
     center_long:117.255652,
     fraction:0.000001,
-    cur_page:[""],
+    cur_name:"",
+    cur_intro:"",
   },
   //生命周期函数--监听页面加载
   onLoad: function (options) { //刷新完成后停止下拉刷新动效    
@@ -70,7 +71,7 @@ Page({
         })
         var mark=that.data.markers;
         var curdatabase=[];
-        if(that.data.mode_index1!=4){
+        if(that.data.mode_index1!=4&&that.data.mode_index2!=9){
           var result=that.data.app_data[that.data.mode_index1][that.data.mode_index2][that.data.mode_index3];
           for(var i=0;i<result.length;i++){
             var mark_tmp={
@@ -97,7 +98,7 @@ Page({
           }
           curdatabase=result;
         }
-        else{
+        else if(that.data.mode_index==4&&that.data.mode_index2!=9){
           var id_cur=1;
           for(var i0=0;i0<=2;i0++){
             var result=that.data.app_data[i0][that.data.mode_index2][that.data.mode_index3];
@@ -126,6 +127,41 @@ Page({
               mark.push(mark_tmp);
               curdatabase.push(result[i]);
             }        
+          }
+        }
+        else{
+          var id_cur=1;
+          for(var i0=0;i0<=2;i0++){
+            for(var i1=0;i1<=8;i1++){
+              for(var i2=0;i2<that.data.app_data[i0][i1].length;i2++){
+                var result=that.data.app_data[i0][i1][i2];
+                for(var i=0;i<result.length;i++){
+                  var mark_tmp={
+                    id:id_cur,
+                    latitude: result[i].latitude,
+                    longitude: result[i].longtitude,
+                    iconPath: that.data.mode_image,
+                    width: 25,
+                    height: 25,
+                    label: {
+                      content: result[i].name,
+                      color: '#FFFFFF',
+                      bgColor:'#6495ED',
+                      fontSize: 13,
+                      anchorX:14,
+                      anchorY:-24,
+                      borderRadius: 5,
+                      borderWidth: 1,
+                      borderColor: '#6495ED',
+                      padding: 2,
+                    }
+                  }
+                  id_cur++;
+                  mark.push(mark_tmp);
+                  curdatabase.push(result[i]);
+                } 
+              }
+            }
           }
         }
         that.setData({
@@ -162,10 +198,10 @@ Page({
   //点击地点进行路径规划
   onPointTap: function(e) {
     var i=e.detail.markerId;
-    if(i>=100){
-      console.log("return");
-      return;
-    }
+    // if(i>=100){
+    //   console.log("return");
+    //   return;
+    // }
     // console.log(this.data.currentdatabase);
     var startPoint = JSON.stringify({
       'name':this.data.markers[0].callout.content,
@@ -179,18 +215,14 @@ Page({
     });
     this.setData({
       hidden:false,
-      page_hidden:true,
+      page_hidden:false,
       modalname:this.data.currentdatabase[i-1].name,
       startPoint:startPoint,
       endPoint:endPoint,
-      place_img_src:this.data.currentdatabase[i-1].img
+      place_img_src:this.data.currentdatabase[i-1].img,
+      cur_name:this.data.currentdatabase[i-1].name,
+      cur_intro:this.data.currentdatabase[i-1].page_link,
     })
-    if(this.data.currentdatabase[i-1].page_link!=""){
-      this.setData({
-        page_hidden:false,
-        cur_page:this.data.currentdatabase[i-1].page_link,
-      })
-    }
   },
 
 
@@ -210,11 +242,8 @@ Page({
     })
   },
   page_click:function(){
-    wx.previewImage({
-      urls: this.data.cur_page,
-      success:(res=>{
-        console.log('接口调用成功',res)
-      })
+    wx.navigateTo({
+      url: '../../pages/new/new?name='+this.data.cur_name+'&intro='+this.data.cur_intro,
     })
   },
   modalcancel:function(e)
