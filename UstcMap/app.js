@@ -2,8 +2,8 @@
 //TODO2:campus页面和surrounding页面解决图字不对齐问题:截图当做整体
 App({
   globalData: {
-    userinfo:null,
-    openid:null,
+    userinfo: null,
+    openid: null,
     campus: [
       {
         "data_west": [
@@ -2074,7 +2074,9 @@ App({
         "data_gaoxin": [
           [//food
             [//canteen
-
+              {
+                name: "老食堂"
+              }
             ],
             [//fruit
 
@@ -2083,7 +2085,7 @@ App({
 
             ],
           ],
-          [//study
+          [//study test
             [//teaching_building
 
             ],
@@ -2835,16 +2837,16 @@ App({
       ],
     ]
   },
-  onLaunch:function(){
-    var that=this;
+  onLaunch: function () {
+    var that = this;
     wx.cloud.init({
-      env:'cloud1-4g5vv45i69fe6223',
+      env: 'cloud1-4g5vv45i69fe6223',
     })
 
     wx.cloud.callFunction({
-      name:'getUserOpenid',
-      success(res){
-        that.globalData.openid=res.result.openid
+      name: 'getUserOpenid',
+      success(res) {
+        that.globalData.openid = res.result.openid
       }
     })
   },
